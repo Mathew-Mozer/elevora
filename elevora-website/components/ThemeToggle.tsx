@@ -34,7 +34,7 @@ export default function ThemeToggle() {
         </span>
       </motion.button>
     )
-  } catch (error) {
+  } catch {
     // Return null if there's any error accessing the context
     return null
   }

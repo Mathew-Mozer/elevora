@@ -171,7 +171,7 @@ export default function ProcessTimeline() {
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <h3 className="font-semibold text-primary-text mb-3">What We'll Do</h3>
+                          <h3 className="font-semibold text-primary-text mb-3">What We&apos;ll Do</h3>
                           <ul className="space-y-2">
                             {step.details.map((detail, idx) => (
                               <li key={idx} className="flex items-start space-x-2">
@@ -182,7 +182,7 @@ export default function ProcessTimeline() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="font-semibold text-primary-text mb-3">What You'll Get</h3>
+                          <h3 className="font-semibold text-primary-text mb-3">What You&apos;ll Get</h3>
                           <ul className="space-y-2">
                             {step.deliverables.map((deliverable, idx) => (
                               <li key={idx} className="flex items-start space-x-2">

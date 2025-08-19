@@ -91,7 +91,7 @@ export default function CaseStudiesListing() {
             Proven Results Across Industries
           </h1>
           <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
-            Real transformations delivering measurable impact. See how I've helped businesses eliminate manual work, 
+            Real transformations delivering measurable impact. See how I&apos;ve helped businesses eliminate manual work, 
             automate operations, and scale with confidence.
           </p>
         </motion.div>
@@ -209,7 +209,7 @@ export default function CaseStudiesListing() {
             Ready to Be the Next Success Story?
           </h3>
           <p className="text-lg text-primary-text/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can transform your manual processes into intelligent systems that drive real results.
+            Let&apos;s discuss how we can transform your manual processes into intelligent systems that drive real results.
           </p>
           <Link
             href="/contact"

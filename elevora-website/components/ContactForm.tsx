@@ -35,7 +35,7 @@ export default function ContactPage() {
       console.log('Form submitted:', data)
       setSubmitStatus('success')
       reset()
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -80,7 +80,7 @@ export default function ContactPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
-            Let's Explore Your Transformation
+            Let&apos;s Explore Your Transformation
           </h1>
           <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
             Book your free consultation and discover how we can automate your processes and scale your operations.
@@ -114,15 +114,15 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-primary-text mb-1">Before Our Call</h4>
-                  <p className="text-sm text-primary-text/80">You'll receive a confirmation with Zoom link. Optional: Send any materials you'd like me to review.</p>
+                  <p className="text-sm text-primary-text/80">You&apos;ll receive a confirmation with Zoom link. Optional: Send any materials you&apos;d like me to review.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary-text mb-1">During Our Call</h4>
-                  <p className="text-sm text-primary-text/80">We'll discuss your current challenges, I'll ask questions to understand your operations, and we'll identify potential quick wins.</p>
+                  <p className="text-sm text-primary-text/80">We&apos;ll discuss your current challenges, I&apos;ll ask questions to understand your operations, and we&apos;ll identify potential quick wins.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary-text mb-1">After Our Call</h4>
-                  <p className="text-sm text-primary-text/80">You'll receive a summary of our discussion. If we're a fit, we'll schedule free discovery sessions. If not, I'll try to point you in the right direction.</p>
+                  <p className="text-sm text-primary-text/80">You&apos;ll receive a summary of our discussion. If we&apos;re a fit, we&apos;ll schedule free discovery sessions. If not, I&apos;ll try to point you in the right direction.</p>
                 </div>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                     className="flex items-center space-x-2 p-4 bg-green-50 text-green-800 rounded-lg"
                   >
                     <CheckCircle className="h-5 w-5" />
-                    <span>Message sent successfully! I'll get back to you within 24 hours.</span>
+                    <span>Message sent successfully! I&apos;ll get back to you within 24 hours.</span>
                   </motion.div>
                 )}
 
