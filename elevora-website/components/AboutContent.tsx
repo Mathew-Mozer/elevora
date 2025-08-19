@@ -51,7 +51,7 @@ export default function AboutContent() {
               
               <div className="border-l-4 border-primary-accent pl-6 py-2">
                 <p className="text-lg text-primary-text/80 italic">
-                  "{siteConfig.founder.quote}"
+                  &ldquo;{siteConfig.founder.quote}&rdquo;
                 </p>
                 <p className="text-sm text-primary-accent mt-3">
                   - Mathew Mozer, Founder
@@ -114,7 +114,7 @@ export default function AboutContent() {
           
           <div className="card bg-gradient-to-br from-primary-accent/5 to-primary-accent-light/5 p-8 md:p-12">
             <p className="text-lg text-primary-text/80 mb-6">
-              Every business has unique challenges, but the solution isn't always unique—it's about applying proven patterns in the right way.
+              Every business has unique challenges, but the solution isn&apos;t always unique—it&apos;s about applying proven patterns in the right way.
             </p>
             <p className="text-lg text-primary-text/80">
               Elevora exists to bring enterprise-level transformation capabilities to growing businesses. 
@@ -193,7 +193,7 @@ export default function AboutContent() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-primary-text/80 mb-8 max-w-2xl mx-auto">
-            Give Elevora your toughest process, and we'll make it simple.
+            Give Elevora your toughest process, and we&apos;ll make it simple.
           </p>
           <Link 
             href="/contact"

@@ -31,8 +31,8 @@ export default function ProblemsShowcase() {
             Problems Elevora Solves
           </h2>
           <p className="text-lg text-primary-text/80 max-w-2xl mx-auto">
-            Give Elevora your toughest process, and we'll make it simple. 
-            Here's how we transform common business challenges.
+            Give Elevora your toughest process, and we&apos;ll make it simple. 
+            Here&apos;s how we transform common business challenges.
           </p>
         </motion.div>
 
@@ -120,7 +120,7 @@ export default function ProblemsShowcase() {
                 transition={{ delay: 0.3 + index * 0.1 }}
                 className="text-center card hover-lift"
               >
-                <p className="text-lg font-medium gradient-text">"{promise}"</p>
+                <p className="text-lg font-medium gradient-text">&ldquo;{promise}&rdquo;</p>
               </motion.div>
             ))}
           </div>
