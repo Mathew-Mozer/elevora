@@ -1,0 +1,131 @@
+'use client'
+
+import Link from 'next/link'
+import { ArrowRight, CheckCircle, Zap } from 'lucide-react'
+import { motion } from 'framer-motion'
+
+export default function Hero() {
+  return (
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 gradient-bg opacity-50" />
+      
+      <div className="container-width section-padding relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-4xl mx-auto"
+        >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1 }}
+            className="inline-flex items-center space-x-2 px-4 py-2 bg-elevora-green/10 border border-elevora-green/20 rounded-full mb-6"
+          >
+            <Zap className="h-4 w-4 text-elevora-green" />
+            <span className="text-sm font-medium text-elevora-green">
+              Free 60-min consultation + 5 hours discovery
+            </span>
+          </motion.div>
+
+          {/* Main Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-4xl md:text-6xl font-display font-bold mb-6 text-elevora-indigo"
+          >
+            Transform Your Manual Processes into{' '}
+            <span className="gradient-text">Intelligent Business Systems</span>
+          </motion.h1>
+
+          {/* Subheadline */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-xl text-elevora-slate mb-8"
+          >
+            Stop losing hours to spreadsheets. Start scaling with AI-powered automation.
+          </motion.p>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+          >
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors group"
+            >
+              Book Your Free Consultation
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="/case-studies"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-elevora-indigo text-elevora-indigo font-semibold rounded-lg hover:bg-elevora-indigo hover:text-white transition-colors"
+            >
+              View Case Studies
+            </Link>
+          </motion.div>
+
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+          >
+            {[
+              { value: '5+', label: 'Years Experience' },
+              { value: '7,000+', label: 'Code Contributions' },
+              { value: '200+', label: 'Hours Saved Monthly' },
+              { value: '99.9%', label: 'System Uptime' },
+            ].map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6 + index * 0.1 }}
+                className="text-center"
+              >
+                <div className="text-2xl font-bold text-elevora-indigo">{stat.value}</div>
+                <div className="text-sm text-elevora-slate">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="text-elevora-slate"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </motion.div>
+      </motion.div>
+    </section>
+  )
+}

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 25% 22%;
+    
+    /* Elevora Brand Colors */
+    --elevora-indigo: 223 33% 27%;
+    --elevora-blue: 217 91% 60%;
+    --elevora-green: 160 84% 39%;
+    --elevora-gold: 35 92% 49%;
+    --elevora-slate: 215 9% 46%;
+    --elevora-cloud: 210 20% 98%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 224 71% 4%;
+      --foreground: 210 20% 98%;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-elevora-indigo;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-elevora-indigo via-elevora-blue to-elevora-green bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-elevora-blue/10 via-elevora-green/5 to-elevora-gold/10;
+  }
+
+  .card-shadow {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply px-6 sm:px-8 lg:px-12;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+}
