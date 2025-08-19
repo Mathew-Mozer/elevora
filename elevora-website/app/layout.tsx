@@ -49,6 +49,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { ThemeProvider } from '@/components/ThemeProvider'
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,9 +59,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans antialiased`}
+        className={`${inter.variable} ${poppins.variable} font-sans antialiased gradient-bg min-h-screen`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

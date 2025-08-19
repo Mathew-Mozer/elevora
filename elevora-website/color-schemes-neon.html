@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevora - Neon Color Schemes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #000000;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00ffff 0%, #ff00ff 50%, #ffff00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { filter: brightness(1); }
+            to { filter: brightness(1.2); }
+        }
+        
+        .header p {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        
+        .schemes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .scheme-card {
+            border-radius: 20px;
+            overflow: visible;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .scheme-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        
+        .scheme-preview {
+            padding: 30px;
+            min-height: 400px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .scheme-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: var(--border-gradient);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+        
+        .scheme-hero {
+            margin-bottom: 20px;
+        }
+        
+        .scheme-hero h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: var(--text-glow);
+        }
+        
+        .scheme-hero .tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .scheme-hero .cta {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .scheme-hero .cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+        }
+        
+        .scheme-hero .cta:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .scheme-features {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .color-palette {
+            display: flex;
+            gap: 5px;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+        
+        .color-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .color-swatch:hover::after {
+            content: attr(data-color);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+        
+        .scheme-info {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            right: 30px;
+        }
+        
+        .scheme-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .scheme-description {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* Scheme 1: Cyber Pink */
+        .scheme-1 {
+            background: linear-gradient(135deg, #0a0014 0%, #1a0a1f 100%);
+            color: #ff00ff;
+            --border-gradient: linear-gradient(135deg, #ff00ff, #ff00aa);
+            box-shadow: 0 0 50px rgba(255, 0, 255, 0.3);
+        }
+        .scheme-1 .scheme-hero h2 {
+            color: #ff00ff;
+            --text-glow: 0 0 20px #ff00ff, 0 0 40px #ff00aa;
+        }
+        .scheme-1 .cta {
+            background: transparent;
+            color: #ff00ff;
+            border: 2px solid #ff00ff;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), inset 0 0 20px rgba(255, 0, 255, 0.2);
+        }
+        .scheme-1 .cta:hover {
+            background: #ff00ff;
+            color: #0a0014;
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+        }
+        .scheme-1 .feature-card {
+            border-color: #ff00ff;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+        }
+
+        /* Scheme 2: Electric Cyan */
+        .scheme-2 {
+            background: linear-gradient(135deg, #000814 0%, #001428 100%);
+            color: #00ffff;
+            --border-gradient: linear-gradient(135deg, #00ffff, #00aaff);
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+        }
+        .scheme-2 .scheme-hero h2 {
+            color: #00ffff;
+            --text-glow: 0 0 20px #00ffff, 0 0 40px #00aaff;
+        }
+        .scheme-2 .cta {
+            background: transparent;
+            color: #00ffff;
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+        .scheme-2 .cta:hover {
+            background: #00ffff;
+            color: #000814;
+        }
+        .scheme-2 .feature-card {
+            border-color: #00ffff;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        /* Scheme 3: Toxic Green */
+        .scheme-3 {
+            background: linear-gradient(135deg, #001400 0%, #002800 100%);
+            color: #00ff00;
+            --border-gradient: linear-gradient(135deg, #00ff00, #88ff00);
+            box-shadow: 0 0 50px rgba(0, 255, 0, 0.3);
+        }
+        .scheme-3 .scheme-hero h2 {
+            color: #00ff00;
+            --text-glow: 0 0 20px #00ff00, 0 0 40px #88ff00;
+        }
+        .scheme-3 .cta {
+            background: transparent;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5), inset 0 0 20px rgba(0, 255, 0, 0.2);
+        }
+        .scheme-3 .cta:hover {
+            background: #00ff00;
+            color: #001400;
+        }
+        .scheme-3 .feature-card {
+            border-color: #00ff00;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+
+        /* Scheme 4: Sunset Orange */
+        .scheme-4 {
+            background: linear-gradient(135deg, #140800 0%, #281000 100%);
+            color: #ff8800;
+            --border-gradient: linear-gradient(135deg, #ff8800, #ffaa00);
+            box-shadow: 0 0 50px rgba(255, 136, 0, 0.3);
+        }
+        .scheme-4 .scheme-hero h2 {
+            color: #ff8800;
+            --text-glow: 0 0 20px #ff8800, 0 0 40px #ffaa00;
+        }
+        .scheme-4 .cta {
+            background: transparent;
+            color: #ff8800;
+            border: 2px solid #ff8800;
+            box-shadow: 0 0 20px rgba(255, 136, 0, 0.5), inset 0 0 20px rgba(255, 136, 0, 0.2);
+        }
+        .scheme-4 .cta:hover {
+            background: #ff8800;
+            color: #140800;
+        }
+        .scheme-4 .feature-card {
+            border-color: #ff8800;
+            box-shadow: 0 0 10px rgba(255, 136, 0, 0.3);
+        }
+
+        /* Scheme 5: UV Purple */
+        .scheme-5 {
+            background: linear-gradient(135deg, #0a0014 0%, #14001f 100%);
+            color: #8800ff;
+            --border-gradient: linear-gradient(135deg, #8800ff, #bb00ff);
+            box-shadow: 0 0 50px rgba(136, 0, 255, 0.3);
+        }
+        .scheme-5 .scheme-hero h2 {
+            color: #8800ff;
+            --text-glow: 0 0 20px #8800ff, 0 0 40px #bb00ff;
+        }
+        .scheme-5 .cta {
+            background: transparent;
+            color: #8800ff;
+            border: 2px solid #8800ff;
+            box-shadow: 0 0 20px rgba(136, 0, 255, 0.5), inset 0 0 20px rgba(136, 0, 255, 0.2);
+        }
+        .scheme-5 .cta:hover {
+            background: #8800ff;
+            color: #0a0014;
+        }
+        .scheme-5 .feature-card {
+            border-color: #8800ff;
+            box-shadow: 0 0 10px rgba(136, 0, 255, 0.3);
+        }
+
+        /* Scheme 6: Hot Red */
+        .scheme-6 {
+            background: linear-gradient(135deg, #140000 0%, #280000 100%);
+            color: #ff0044;
+            --border-gradient: linear-gradient(135deg, #ff0044, #ff0088);
+            box-shadow: 0 0 50px rgba(255, 0, 68, 0.3);
+        }
+        .scheme-6 .scheme-hero h2 {
+            color: #ff0044;
+            --text-glow: 0 0 20px #ff0044, 0 0 40px #ff0088;
+        }
+        .scheme-6 .cta {
+            background: transparent;
+            color: #ff0044;
+            border: 2px solid #ff0044;
+            box-shadow: 0 0 20px rgba(255, 0, 68, 0.5), inset 0 0 20px rgba(255, 0, 68, 0.2);
+        }
+        .scheme-6 .cta:hover {
+            background: #ff0044;
+            color: #140000;
+        }
+        .scheme-6 .feature-card {
+            border-color: #ff0044;
+            box-shadow: 0 0 10px rgba(255, 0, 68, 0.3);
+        }
+
+        /* Scheme 7: Laser Yellow */
+        .scheme-7 {
+            background: linear-gradient(135deg, #0a0a00 0%, #141400 100%);
+            color: #ffff00;
+            --border-gradient: linear-gradient(135deg, #ffff00, #ffcc00);
+            box-shadow: 0 0 50px rgba(255, 255, 0, 0.3);
+        }
+        .scheme-7 .scheme-hero h2 {
+            color: #ffff00;
+            --text-glow: 0 0 20px #ffff00, 0 0 40px #ffcc00;
+        }
+        .scheme-7 .cta {
+            background: transparent;
+            color: #ffff00;
+            border: 2px solid #ffff00;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.5), inset 0 0 20px rgba(255, 255, 0, 0.2);
+        }
+        .scheme-7 .cta:hover {
+            background: #ffff00;
+            color: #0a0a00;
+        }
+        .scheme-7 .feature-card {
+            border-color: #ffff00;
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+        }
+
+        /* Scheme 8: Ice Blue */
+        .scheme-8 {
+            background: linear-gradient(135deg, #000a14 0%, #001428 100%);
+            color: #00ccff;
+            --border-gradient: linear-gradient(135deg, #00ccff, #0099ff);
+            box-shadow: 0 0 50px rgba(0, 204, 255, 0.3);
+        }
+        .scheme-8 .scheme-hero h2 {
+            color: #00ccff;
+            --text-glow: 0 0 20px #00ccff, 0 0 40px #0099ff;
+        }
+        .scheme-8 .cta {
+            background: transparent;
+            color: #00ccff;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.5), inset 0 0 20px rgba(0, 204, 255, 0.2);
+        }
+        .scheme-8 .cta:hover {
+            background: #00ccff;
+            color: #000a14;
+        }
+        .scheme-8 .feature-card {
+            border-color: #00ccff;
+            box-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
+        }
+
+        /* Scheme 9: Dual Tone - Pink/Cyan */
+        .scheme-9 {
+            background: linear-gradient(135deg, #0a0014 0%, #00140a 100%);
+            color: #ffffff;
+            --border-gradient: linear-gradient(135deg, #ff00ff, #00ffff);
+            box-shadow: 0 0 50px rgba(127, 127, 255, 0.3);
+        }
+        .scheme-9 .scheme-hero h2 {
+            background: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            --text-glow: 0 0 20px #ff00ff, 0 0 20px #00ffff;
+        }
+        .scheme-9 .cta {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid;
+            border-image: linear-gradient(135deg, #ff00ff, #00ffff) 1;
+            box-shadow: 0 0 20px rgba(127, 127, 255, 0.5);
+        }
+        .scheme-9 .cta:hover {
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
+            color: #0a0014;
+        }
+        .scheme-9 .feature-card {
+            border-image: linear-gradient(135deg, #ff00ff, #00ffff) 1;
+            box-shadow: 0 0 10px rgba(127, 127, 255, 0.3);
+        }
+
+        /* Scheme 10: RGB Spectrum */
+        .scheme-10 {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+            color: #ffffff;
+            --border-gradient: linear-gradient(135deg, #ff0000, #00ff00, #0000ff, #ff0000);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+            animation: rgb-shift 3s linear infinite;
+        }
+        @keyframes rgb-shift {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        .scheme-10 .scheme-hero h2 {
+            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: rainbow-slide 2s linear infinite;
+        }
+        @keyframes rainbow-slide {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        .scheme-10 .cta {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        .scheme-10 .cta::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+            z-index: -1;
+            background-size: 200% 100%;
+            animation: rainbow-slide 2s linear infinite;
+        }
+        .scheme-10 .feature-card {
+            border-color: #ffffff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Elevora Neon Color Schemes</h1>
+        <p>"Cyberpunk meets corporate innovation - glowing borders and electric energy"</p>
+    </div>
+
+    <div class="schemes-grid">
+        <!-- Scheme 1: Cyber Pink -->
+        <div class="scheme-card scheme-1">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0a0014" data-color="#0a0014"></div>
+                    <div class="color-swatch" style="background: #1a0a1f" data-color="#1a0a1f"></div>
+                    <div class="color-swatch" style="background: #ff00ff" data-color="#ff00ff"></div>
+                    <div class="color-swatch" style="background: #ff00aa" data-color="#ff00aa"></div>
+                    <div class="color-swatch" style="background: #ff66ff" data-color="#ff66ff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Cyber Pink</div>
+                    <div class="scheme-description">Hot pink neon glow for bold innovation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 2: Electric Cyan -->
+        <div class="scheme-card scheme-2">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #000814" data-color="#000814"></div>
+                    <div class="color-swatch" style="background: #001428" data-color="#001428"></div>
+                    <div class="color-swatch" style="background: #00ffff" data-color="#00ffff"></div>
+                    <div class="color-swatch" style="background: #00aaff" data-color="#00aaff"></div>
+                    <div class="color-swatch" style="background: #66ffff" data-color="#66ffff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Electric Cyan</div>
+                    <div class="scheme-description">Bright cyan energy with digital vibes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 3: Toxic Green -->
+        <div class="scheme-card scheme-3">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #001400" data-color="#001400"></div>
+                    <div class="color-swatch" style="background: #002800" data-color="#002800"></div>
+                    <div class="color-swatch" style="background: #00ff00" data-color="#00ff00"></div>
+                    <div class="color-swatch" style="background: #88ff00" data-color="#88ff00"></div>
+                    <div class="color-swatch" style="background: #66ff66" data-color="#66ff66"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Toxic Green</div>
+                    <div class="scheme-description">Matrix-style neon green glow</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 4: Sunset Orange -->
+        <div class="scheme-card scheme-4">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #140800" data-color="#140800"></div>
+                    <div class="color-swatch" style="background: #281000" data-color="#281000"></div>
+                    <div class="color-swatch" style="background: #ff8800" data-color="#ff8800"></div>
+                    <div class="color-swatch" style="background: #ffaa00" data-color="#ffaa00"></div>
+                    <div class="color-swatch" style="background: #ffbb66" data-color="#ffbb66"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Sunset Orange</div>
+                    <div class="scheme-description">Warm neon orange with fire energy</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 5: UV Purple -->
+        <div class="scheme-card scheme-5">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0a0014" data-color="#0a0014"></div>
+                    <div class="color-swatch" style="background: #14001f" data-color="#14001f"></div>
+                    <div class="color-swatch" style="background: #8800ff" data-color="#8800ff"></div>
+                    <div class="color-swatch" style="background: #bb00ff" data-color="#bb00ff"></div>
+                    <div class="color-swatch" style="background: #cc66ff" data-color="#cc66ff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">UV Purple</div>
+                    <div class="scheme-description">Ultraviolet glow with mystique</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 6: Hot Red -->
+        <div class="scheme-card scheme-6">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #140000" data-color="#140000"></div>
+                    <div class="color-swatch" style="background: #280000" data-color="#280000"></div>
+                    <div class="color-swatch" style="background: #ff0044" data-color="#ff0044"></div>
+                    <div class="color-swatch" style="background: #ff0088" data-color="#ff0088"></div>
+                    <div class="color-swatch" style="background: #ff6688" data-color="#ff6688"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Hot Red</div>
+                    <div class="scheme-description">Intense red neon with danger vibes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 7: Laser Yellow -->
+        <div class="scheme-card scheme-7">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0a0a00" data-color="#0a0a00"></div>
+                    <div class="color-swatch" style="background: #141400" data-color="#141400"></div>
+                    <div class="color-swatch" style="background: #ffff00" data-color="#ffff00"></div>
+                    <div class="color-swatch" style="background: #ffcc00" data-color="#ffcc00"></div>
+                    <div class="color-swatch" style="background: #ffff66" data-color="#ffff66"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Laser Yellow</div>
+                    <div class="scheme-description">High-energy yellow laser beam effect</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 8: Ice Blue -->
+        <div class="scheme-card scheme-8">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #000a14" data-color="#000a14"></div>
+                    <div class="color-swatch" style="background: #001428" data-color="#001428"></div>
+                    <div class="color-swatch" style="background: #00ccff" data-color="#00ccff"></div>
+                    <div class="color-swatch" style="background: #0099ff" data-color="#0099ff"></div>
+                    <div class="color-swatch" style="background: #66ddff" data-color="#66ddff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Ice Blue</div>
+                    <div class="scheme-description">Cool ice-blue neon with frost effect</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 9: Dual Tone - Pink/Cyan -->
+        <div class="scheme-card scheme-9">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0a0014" data-color="#0a0014"></div>
+                    <div class="color-swatch" style="background: #00140a" data-color="#00140a"></div>
+                    <div class="color-swatch" style="background: #ff00ff" data-color="#ff00ff"></div>
+                    <div class="color-swatch" style="background: #00ffff" data-color="#00ffff"></div>
+                    <div class="color-swatch" style="background: #ffffff" data-color="#ffffff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">Dual Tone</div>
+                    <div class="scheme-description">Pink & cyan gradient neon fusion</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scheme 10: RGB Spectrum -->
+        <div class="scheme-card scheme-10">
+            <div class="scheme-preview">
+                <div class="scheme-hero">
+                    <h2>Elevora</h2>
+                    <p class="tagline">Transform Your Business with Intelligence</p>
+                    <a href="#" class="cta">Start Your Journey</a>
+                </div>
+                <div class="scheme-features">
+                    <div class="feature-card">AI/ML</div>
+                    <div class="feature-card">Automation</div>
+                    <div class="feature-card">Scale</div>
+                </div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #000000" data-color="#000000"></div>
+                    <div class="color-swatch" style="background: #ff0000" data-color="#ff0000"></div>
+                    <div class="color-swatch" style="background: #00ff00" data-color="#00ff00"></div>
+                    <div class="color-swatch" style="background: #0000ff" data-color="#0000ff"></div>
+                    <div class="color-swatch" style="background: #ffffff" data-color="#ffffff"></div>
+                </div>
+                <div class="scheme-info">
+                    <div class="scheme-name">RGB Spectrum</div>
+                    <div class="scheme-description">Animated rainbow neon with color shift</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; color: #666;">
+        <p>Each neon scheme features glowing borders, electric colors, and cyberpunk aesthetics</p>
+        <p style="margin-top: 10px;">The neon effects intensify on hover - try interacting with the cards!</p>
+    </div>
+</body>
+</html>

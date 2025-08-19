@@ -3,17 +3,39 @@
 @tailwind utilities;
 
 @layer base {
+  /* Midnight Aurora Theme (Default) */
   :root {
     --background: 0 0% 100%;
     --foreground: 224 25% 22%;
     
-    /* Elevora Brand Colors */
-    --elevora-indigo: 223 33% 27%;
-    --elevora-blue: 217 91% 60%;
-    --elevora-green: 160 84% 39%;
-    --elevora-gold: 35 92% 49%;
-    --elevora-slate: 215 9% 46%;
-    --elevora-cloud: 210 20% 98%;
+    /* Theme Colors - Midnight Aurora */
+    --primary-bg: 10 14 39; /* #0a0e27 */
+    --primary-bg-light: 30 58 95; /* #1e3a5f */
+    --primary-accent: 0 212 255; /* #00d4ff */
+    --primary-accent-light: 0 102 255; /* #0066ff */
+    --primary-text: 201 227 255; /* #c9e3ff */
+    --primary-text-light: 255 255 255; /* #ffffff */
+    --primary-border: 0 212 255; /* #00d4ff */
+    
+    /* Glow effects */
+    --glow-color: 0, 212, 255;
+    --glow-intensity: 0.3;
+  }
+
+  /* Cool Mint Theme */
+  :root.theme-mint {
+    /* Theme Colors - Cool Mint */
+    --primary-bg: 15 26 26; /* #0f1a1a */
+    --primary-bg-light: 26 47 47; /* #1a2f2f */
+    --primary-accent: 20 184 166; /* #14b8a6 */
+    --primary-accent-light: 103 232 249; /* #67e8f9 */
+    --primary-text: 208 240 240; /* #d0f0f0 */
+    --primary-text-light: 255 255 255; /* #ffffff */
+    --primary-border: 20 184 166; /* #14b8a6 */
+    
+    /* Glow effects */
+    --glow-color: 20, 184, 166;
+    --glow-intensity: 0.3;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -45,19 +67,43 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-elevora-indigo via-elevora-blue to-elevora-green bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-accent via-primary-accent-light to-primary-accent bg-clip-text text-transparent;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-elevora-blue/10 via-elevora-green/5 to-elevora-gold/10;
+    background: linear-gradient(135deg, rgb(var(--primary-bg)), rgb(var(--primary-bg-light)));
+  }
+
+  .neon-border {
+    box-shadow: 
+      0 0 20px rgba(var(--glow-color), var(--glow-intensity)),
+      inset 0 0 20px rgba(var(--glow-color), calc(var(--glow-intensity) * 0.1));
+    border: 1px solid rgb(var(--primary-border) / 0.5);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 30px rgba(var(--glow-color), var(--glow-intensity));
+  }
+
+  .neon-text {
+    text-shadow: 
+      0 0 10px rgba(var(--glow-color), 0.8),
+      0 0 20px rgba(var(--glow-color), 0.5),
+      0 0 30px rgba(var(--glow-color), 0.3);
   }
 
   .card-shadow {
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+      0 10px 30px -15px rgba(0, 0, 0, 0.2),
+      0 0 20px rgba(var(--glow-color), calc(var(--glow-intensity) * 0.3));
   }
 
   .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-1;
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .hover-lift:hover {
+    box-shadow: 0 0 40px rgba(var(--glow-color), calc(var(--glow-intensity) * 0.5));
   }
 
   .section-padding {
@@ -66,5 +112,16 @@
 
   .container-width {
     @apply max-w-7xl mx-auto;
+  }
+
+  /* Theme Toggle Button Styles */
+  .theme-toggle {
+    @apply fixed top-20 right-4 z-50 p-3 rounded-full bg-primary-bg-light/90 backdrop-blur-sm border border-primary-border/30 cursor-pointer transition-all duration-300;
+    box-shadow: 0 0 20px rgba(var(--glow-color), 0.3);
+  }
+
+  .theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(var(--glow-color), 0.5);
   }
 }

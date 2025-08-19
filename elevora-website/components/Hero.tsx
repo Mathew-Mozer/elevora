@@ -6,9 +6,11 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary-bg">
       {/* Background Gradient */}
-      <div className="absolute inset-0 gradient-bg opacity-50" />
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-accent/10 via-transparent to-primary-accent-light/10" />
+      </div>
       
       <div className="container-width section-padding relative z-10">
         <motion.div
@@ -22,10 +24,10 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 bg-elevora-green/10 border border-elevora-green/20 rounded-full mb-6"
+            className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-accent/10 border border-primary-accent/30 rounded-full mb-6 neon-border"
           >
-            <Zap className="h-4 w-4 text-elevora-green" />
-            <span className="text-sm font-medium text-elevora-green">
+            <Zap className="h-4 w-4 text-primary-accent" />
+            <span className="text-sm font-medium text-primary-accent">
               Free 60-min consultation + 5 hours discovery
             </span>
           </motion.div>
@@ -35,10 +37,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-display font-bold mb-6 text-elevora-indigo"
+            className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary-text"
           >
             Transform Your Manual Processes into{' '}
-            <span className="gradient-text">Intelligent Business Systems</span>
+            <span className="gradient-text neon-text">Intelligent Business Systems</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -46,7 +48,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl text-elevora-slate mb-8"
+            className="text-xl text-primary-text/80 mb-8"
           >
             Stop losing hours to spreadsheets. Start scaling with AI-powered automation.
           </motion.p>
@@ -60,14 +62,14 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors group"
+              className="inline-flex items-center justify-center px-6 py-3 bg-primary-accent text-primary-bg font-semibold rounded-lg hover:bg-primary-accent-light transition-all group neon-glow"
             >
               Book Your Free Consultation
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/case-studies"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-elevora-indigo text-elevora-indigo font-semibold rounded-lg hover:bg-elevora-indigo hover:text-white transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-accent text-primary-accent font-semibold rounded-lg hover:bg-primary-accent hover:text-primary-bg transition-all neon-border"
             >
               View Case Studies
             </Link>
@@ -91,10 +93,10 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 + index * 0.1 }}
-                className="text-center"
+                className="text-center p-4 bg-primary-bg-light/30 rounded-lg neon-border backdrop-blur-sm"
               >
-                <div className="text-2xl font-bold text-elevora-indigo">{stat.value}</div>
-                <div className="text-sm text-elevora-slate">{stat.label}</div>
+                <div className="text-2xl font-bold text-primary-accent neon-text">{stat.value}</div>
+                <div className="text-sm text-primary-text/70">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>

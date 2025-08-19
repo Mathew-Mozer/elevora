@@ -1,16 +1,14 @@
-import Header from '@/components/Header'
+import PageWrapper from '@/components/PageWrapper'
 import Hero from '@/components/Hero'
 import ProblemSolution from '@/components/ProblemSolution'
 import SkillsShowcase from '@/components/SkillsShowcase'
 import ServicesPreview from '@/components/ServicesPreview'
 import CaseStudiesPreview from '@/components/CaseStudiesPreview'
 import CTA from '@/components/CTA'
-import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <PageWrapper>
       <main>
         <Hero />
         <ProblemSolution />
@@ -19,7 +17,6 @@ export default function Home() {
         <CaseStudiesPreview />
         <CTA />
       </main>
-      <Footer />
-    </>
+    </PageWrapper>
   );
 }
