@@ -14,7 +14,7 @@ const icons = {
 
 export default function ServicesDetail() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-primary-bg">
       <div className="container-width section-padding">
         {/* Page Header */}
         <motion.div
@@ -23,10 +23,10 @@ export default function ServicesDetail() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-elevora-indigo mb-6">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
             How I Transform Your Business
           </h1>
-          <p className="text-xl text-elevora-slate max-w-3xl mx-auto">
+          <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
             From automation to AI, I provide end-to-end solutions that eliminate manual work and unlock growth. 
             Every solution is tailored to your specific needs and designed to deliver measurable ROI.
           </p>
@@ -47,20 +47,20 @@ export default function ServicesDetail() {
               >
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-16 h-16 bg-elevora-blue/10 rounded-xl flex items-center justify-center">
-                      <Icon className="h-8 w-8 text-elevora-blue" />
+                    <div className="w-16 h-16 bg-primary-accent/10 rounded-xl flex items-center justify-center">
+                      <Icon className="h-8 w-8 text-primary-accent" />
                     </div>
-                    <h2 className="text-3xl font-bold text-elevora-indigo">
+                    <h2 className="text-3xl font-bold text-primary-text">
                       {service.title}
                     </h2>
                   </div>
                   
-                  <p className="text-lg text-elevora-slate mb-6">
+                  <p className="text-lg text-primary-text/70 mb-6">
                     {service.description}
                   </p>
 
                   <div className="space-y-3 mb-8">
-                    <h3 className="font-semibold text-elevora-indigo">What I Do:</h3>
+                    <h3 className="font-semibold text-primary-text">What I Do:</h3>
                     {service.benefits.map((benefit, idx) => (
                       <motion.div
                         key={idx}
@@ -70,21 +70,21 @@ export default function ServicesDetail() {
                         transition={{ delay: 0.1 + idx * 0.05 }}
                         className="flex items-start space-x-3"
                       >
-                        <Check className="h-5 w-5 text-elevora-green flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{benefit}</span>
+                        <Check className="h-5 w-5 text-primary-accent flex-shrink-0 mt-0.5" />
+                        <span className="text-primary-text/80">{benefit}</span>
                       </motion.div>
                     ))}
                   </div>
 
-                  <div className="p-6 bg-gradient-to-r from-elevora-green/10 to-elevora-blue/10 rounded-xl border border-elevora-green/20">
-                    <h4 className="font-semibold text-elevora-green mb-2">Real Result:</h4>
-                    <p className="text-gray-700">{service.result}</p>
+                  <div className="p-6 bg-gradient-to-r from-primary-accent/10 to-primary-accent-light/10 rounded-xl border border-primary-accent/20">
+                    <h4 className="font-semibold gradient-text mb-2">Real Result:</h4>
+                    <p className="text-primary-text/80">{service.result}</p>
                   </div>
                 </div>
 
                 <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="aspect-square bg-gradient-to-br from-elevora-blue/5 via-elevora-green/5 to-elevora-gold/5 rounded-2xl flex items-center justify-center">
-                    <Icon className="h-32 w-32 text-elevora-blue/20" />
+                  <div className="aspect-square bg-gradient-to-br from-primary-accent/5 via-primary-accent-light/5 to-primary-accent/5 rounded-2xl flex items-center justify-center">
+                    <Icon className="h-32 w-32 text-primary-accent/20" />
                   </div>
                 </div>
               </motion.div>
@@ -98,9 +98,9 @@ export default function ServicesDetail() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-20 bg-elevora-indigo rounded-2xl p-12 text-white"
+          className="mt-20 card p-12"
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Elevora?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-primary-text">Why Choose Elevora?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -124,8 +124,8 @@ export default function ServicesDetail() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
-                <p className="text-white/80">{item.description}</p>
+                <h3 className="font-semibold text-xl mb-3 gradient-text">{item.title}</h3>
+                <p className="text-primary-text/70">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,15 +139,15 @@ export default function ServicesDetail() {
           transition={{ duration: 0.5 }}
           className="text-center mt-16"
         >
-          <h3 className="text-2xl font-bold text-elevora-indigo mb-4">
+          <h3 className="text-2xl font-bold text-primary-text mb-4">
             Ready to eliminate manual work and scale your business?
           </h3>
-          <p className="text-lg text-elevora-slate mb-8">
+          <p className="text-lg text-primary-text/70 mb-8">
             Get a free consultation and custom roadmap for your transformation.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors group text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white font-semibold rounded-lg hover:opacity-90 transition-all group text-lg"
           >
             Book Your Free Consultation
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

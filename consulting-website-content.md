@@ -30,19 +30,19 @@
 ### Transformation Examples
 
 1. **Healthcare Operations**
-   - 200+ hours saved monthly by automating patient follow-ups with AI
+   - Significant time savings through automated patient follow-ups
 
 2. **Tournament Management**
-   - Registration time reduced from 3 minutes to 30 seconds
+   - Registration time dramatically reduced
 
 3. **Sales Pipeline**
-   - 5,000 leads processed automatically with 70% faster response time
+   - Thousands of leads processed automatically with dramatically faster response times
 
 ### Trust Indicators
-- 5+ years experience
-- 7,000+ code contributions
+- Years of proven experience
+- Proven track record of successful transformations
 - Healthcare, SaaS, Sports industries
-- AI/ML specialist
+- Process automation expert
 
 ---
 
@@ -59,7 +59,7 @@
 - Build custom workflows for your specific needs
 - Integrate disparate systems into one unified platform
 
-**Example Result:** Automated 80% of routine patient follow-ups, saving a healthcare company 200+ hours monthly
+**Example Result:** Automated the majority of routine patient follow-ups for a healthcare company
 
 ### Service 2: Spreadsheet to System Transformation
 **Description:** Convert complex Excel files into real business systems.
@@ -79,9 +79,9 @@
 - Implement smart search across all your documents
 - Build chatbots that actually understand your business
 - Create predictive analytics for better decisions
-- Deploy RAG systems for instant knowledge retrieval
+- Deploy intelligent knowledge systems for instant information access
 
-**Example Result:** Built RAG system improving document search accuracy by 75%
+**Example Result:** Built intelligent search system with dramatically improved document retrieval
 
 ### Service 4: Custom Business Platforms
 **Description:** Build modern web applications tailored to your operations.
@@ -100,28 +100,27 @@
 
 ### Case Study 1: Healthcare Digital Transformation
 
-**Client:** 500+ clinician healthcare platform
+**Client:** Large healthcare platform
 
 **The Challenge:**
-- Manual patient follow-ups taking 200+ hours monthly
+- Manual patient follow-ups consuming significant staff time
 - Disconnected systems requiring duplicate data entry
 - No visibility into patient engagement
 - Slow response times to patient inquiries
 
 **The Solution:**
-- Built AI-powered chat system with RAG architecture for intelligent responses
-- Integrated EHR systems (AdvanceMD) for real-time bi-directional sync
+- Built AI-powered chat system for intelligent patient responses
+- Integrated healthcare records systems for automatic data synchronization
 - Automated appointment reminders and follow-up sequences
-- Implemented comprehensive monitoring with DataDog
+- Implemented comprehensive system monitoring and alerts
 
 **The Results:**
-- 200+ hours saved monthly on patient follow-ups
-- 75% improvement in chat response accuracy
-- 50% reduction in response time to patient inquiries
-- Zero manual data entry for 10,000+ patients
-- 99.9% system uptime
+- Significant time savings on patient follow-ups
+- Dramatically improved chat response accuracy
+- Much faster response times to patient inquiries
+- Eliminated manual data entry for thousands of patients
+- Exceptional system reliability
 
-**Technologies Used:** TypeScript, Node.js, RAG/Vector Databases, PostgreSQL, AWS
 
 ---
 
@@ -130,27 +129,26 @@
 **Client:** Youth hockey tournament organizer
 
 **The Challenge:**
-- 15+ spreadsheets to manage single tournament
-- 3+ minutes per team registration
+- Multiple spreadsheets required to manage single tournament
+- Lengthy manual registration process
 - Manual hotel assignments taking days
 - No real-time financial visibility
 - Error-prone manual processes
 
 **The Solution:**
 - Built comprehensive tournament management system
-- Automated hotel assignments with intelligent matching algorithm
-- Created financial reconciliation engine with BOGO credits
+- Automated hotel assignments with intelligent matching
+- Created financial reconciliation engine with automatic credit tracking
 - Mobile-optimized registration flow
-- Real-time division health monitoring
+- Real-time tournament status monitoring
 
 **The Results:**
-- Registration time: 3 minutes → 30 seconds (6x faster)
-- Hotel assignments: 3 days → 2 hours (85% reduction)
-- Financial reconciliation: Real-time vs. weekly
-- Handles 100+ teams per tournament seamlessly
+- Registration time reduced to seconds
+- Hotel assignments completed in hours instead of days
+- Real-time financial reconciliation
+- Seamlessly handles large tournaments
 - Zero double-bookings or assignment conflicts
 
-**Technologies Used:** Next.js 14, TypeScript, Prisma, PostgreSQL, Stripe
 
 ---
 
@@ -165,20 +163,19 @@
 - Disconnected from company CRM
 
 **The Solution:**
-- Built GraphQL API architecture with auto-generated schemas
+- Built modern integration architecture for rapid development
 - Implemented AI-powered interview assessment system
 - Created automated campaign management workflows
-- Integrated with Salesforce CRM for seamless lead flow
+- Integrated with company CRM for seamless lead flow
 - Developed comprehensive analytics dashboard
 
 **The Results:**
-- 5,000+ leads processed automatically monthly
-- 70% faster candidate response time
-- 40% reduction in API development time
-- 60% performance improvement through optimization
-- 99.9% platform uptime
+- Thousands of leads processed automatically each month
+- Dramatically faster candidate response times
+- Significant reduction in development time
+- Major performance improvements
+- Exceptional platform reliability
 
-**Technologies Used:** React, GraphQL, Neo4j, TypeScript, Salesforce API
 
 ---
 
@@ -191,7 +188,7 @@
 **What We'll Discuss:**
 - Your current pain points and bottlenecks
 - Biggest opportunities for automation
-- Technical feasibility assessment
+- Solution feasibility and approach
 - Potential ROI and impact
 - Whether we're a good fit to work together
 
@@ -209,7 +206,7 @@
 - Interview key stakeholders
 - Analyze integration points
 - Calculate potential ROI
-- Design solution architecture
+- Design solution approach
 
 **What You'll Get:**
 - Complete process documentation
@@ -221,9 +218,9 @@
 
 **Your Roadmap Includes:**
 - Detailed analysis of current state
-- Proposed future state architecture
+- Proposed future state design
 - Phased implementation plan
-- Technology recommendations
+- System recommendations
 - Time and investment estimates
 - Expected ROI calculations
 - Risk assessment and mitigation
@@ -254,23 +251,23 @@
 ### Who I Am
 
 **Mathew Mozer**  
-Senior Full-Stack Engineer & AI Specialist
+Digital Transformation Consultant & Process Automation Expert
 
-With 5+ years transforming how businesses operate, I specialize in taking companies from manual, error-prone processes to intelligent, automated systems that scale.
+With years of experience transforming how businesses operate, I specialize in taking companies from manual, error-prone processes to intelligent, automated systems that scale.
 
 ### What I Bring
 
-**Technical Excellence**
-- Deep expertise in AI/ML (RAG systems, semantic search, intelligent automation)
-- Full-stack development from database architecture to user interface
+**Proven Results**
+- Deep expertise in artificial intelligence and intelligent automation
+- End-to-end system design and implementation
 - Healthcare, SaaS, and sports industry experience
-- Consistent track record of 40-75% efficiency improvements
+- Consistent track record of significant efficiency improvements
 
 **Business Understanding**
-- Translate complex business needs into elegant technical solutions
+- Translate complex business needs into elegant solutions
 - Focus on ROI and measurable business impact
-- Experience with compliance (HIPAA, PCI) and security
-- Understanding of operational workflows and bottlenecks
+- Experience with healthcare and financial compliance
+- Deep understanding of operational workflows and bottlenecks
 
 ### Why I Do This
 
@@ -285,29 +282,27 @@ Every business has unique challenges, but the solution isn't always unique—it'
 3. **Measure Everything:** Focus on ROI and quantifiable improvements
 4. **Transfer Knowledge:** Documentation and training so you're never dependent
 
-### Technical Credentials
+### Professional Experience
 
-**Experience**
-- 7,000+ production code contributions
+**Track Record**
+- Numerous successful digital transformations delivered
 - Pioneer in healthcare AI implementations
-- Led teams through digital transformations
-- Built systems serving thousands of daily users
+- Led teams through complex system overhauls
+- Built platforms serving thousands of daily users
 
-**Technologies**
-- **Languages:** TypeScript, JavaScript, Python, SQL
-- **Frontend:** React, Next.js, TailwindCSS
-- **Backend:** Node.js, NestJS, GraphQL, REST APIs
-- **AI/ML:** RAG Systems, Vector Databases, OpenAI, LangChain
-- **Databases:** PostgreSQL, MongoDB, Redis, Neo4j
-- **Cloud:** AWS, Azure, Docker, Kubernetes
-- **Compliance:** HIPAA, PCI, SOC2 practices
+**Core Capabilities**
+- Modern web application development
+- Artificial intelligence and machine learning integration
+- Database design and optimization
+- Cloud infrastructure and scalability
+- Healthcare, financial, and data compliance
 
 ### Recent Achievements
 
-- Implemented first RAG system in healthcare company (75% accuracy improvement)
-- Reduced patient follow-up time by 200+ hours monthly through automation
-- Built tournament platform handling 100+ teams with 6x faster registration
-- Achieved 99.9% uptime across multiple production systems
+- Pioneered intelligent search system in healthcare with major accuracy improvements
+- Dramatically reduced patient follow-up time through automation
+- Built tournament platform handling large events with much faster registration
+- Achieved exceptional uptime across multiple business-critical systems
 
 ---
 
@@ -343,7 +338,6 @@ Select any available time that works for you. No preparation needed—just bring
 
 **Email:** [your email]  
 **LinkedIn:** [your LinkedIn profile]  
-**GitHub:** [your GitHub profile]
 
 ### Frequently Asked Questions
 
@@ -351,7 +345,7 @@ Select any available time that works for you. No preparation needed—just bring
 A: Typically businesses with 10-100 employees, but I evaluate based on process complexity, not company size. If you're drowning in manual work, we should talk.
 
 **Q: What if my industry is highly specialized?**  
-A: I've worked in healthcare (HIPAA compliant), finance, and sports. Part of my value is bringing cross-industry insights. I learn your domain during the free discovery phase.
+A: I've worked in healthcare (with compliance requirements), finance, and sports. Part of my value is bringing cross-industry insights. I learn your domain during the free discovery phase.
 
 **Q: How long do projects typically take?**  
 A: Quick wins can be deployed in 2-4 weeks. Full transformations typically take 2-6 months, delivered in phases so you see value quickly.

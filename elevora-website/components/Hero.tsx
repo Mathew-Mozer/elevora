@@ -24,7 +24,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-accent/10 border border-primary-accent/30 rounded-full mb-6 neon-border"
+            className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-accent/10 border border-primary-accent/20 rounded-full mb-6"
           >
             <Zap className="h-4 w-4 text-primary-accent" />
             <span className="text-sm font-medium text-primary-accent">
@@ -40,7 +40,7 @@ export default function Hero() {
             className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary-text"
           >
             Transform Your Manual Processes into{' '}
-            <span className="gradient-text neon-text">Intelligent Business Systems</span>
+            <span className="gradient-text">Intelligent Business Systems</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -62,14 +62,14 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary-accent text-primary-bg font-semibold rounded-lg hover:bg-primary-accent-light transition-all group neon-glow"
+              className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white font-semibold rounded-lg hover:opacity-90 transition-all group"
             >
               Book Your Free Consultation
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/case-studies"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-accent text-primary-accent font-semibold rounded-lg hover:bg-primary-accent hover:text-primary-bg transition-all neon-border"
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary-accent/30 text-primary-text font-semibold rounded-lg hover:bg-primary-accent/10 transition-all"
             >
               View Case Studies
             </Link>
@@ -93,9 +93,9 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 + index * 0.1 }}
-                className="text-center p-4 bg-primary-bg-light/30 rounded-lg neon-border backdrop-blur-sm"
+                className="text-center p-4 bg-primary-bg-light/20 rounded-lg border border-primary-border/10"
               >
-                <div className="text-2xl font-bold text-primary-accent neon-text">{stat.value}</div>
+                <div className="text-2xl font-bold gradient-text">{stat.value}</div>
                 <div className="text-sm text-primary-text/70">{stat.label}</div>
               </motion.div>
             ))}

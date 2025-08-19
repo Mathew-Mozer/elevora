@@ -70,7 +70,7 @@ export default function ContactPage() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-primary-bg">
       <div className="container-width section-padding">
         {/* Page Header */}
         <motion.div
@@ -79,10 +79,10 @@ export default function ContactPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-elevora-indigo mb-6">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
             Let's Explore Your Transformation
           </h1>
-          <p className="text-xl text-elevora-slate max-w-3xl mx-auto">
+          <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
             Book your free consultation and discover how we can automate your processes and scale your operations.
           </p>
         </motion.div>
@@ -96,44 +96,44 @@ export default function ContactPage() {
             className="space-y-8"
           >
             {/* Calendly Embed Placeholder */}
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+            <div className="card rounded-2xl p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <Calendar className="h-6 w-6 text-elevora-blue" />
-                <h2 className="text-2xl font-bold text-elevora-indigo">Book Your Free Strategy Session</h2>
+                <h2 className="text-2xl font-bold text-primary-text">Book Your Free Strategy Session</h2>
               </div>
-              <div className="bg-white rounded-lg p-12 text-center border border-gray-200">
+              <div className="bg-primary-bg rounded-lg p-12 text-center border border-primary-border/20">
                 <Calendar className="h-16 w-16 text-elevora-blue mx-auto mb-4" />
-                <p className="text-gray-600 mb-4">Calendly widget will be embedded here</p>
-                <p className="text-sm text-gray-500">60-minute strategy session • No preparation needed</p>
+                <p className="text-primary-text/70 mb-4">Calendly widget will be embedded here</p>
+                <p className="text-sm text-primary-text/60">60-minute strategy session • No preparation needed</p>
               </div>
             </div>
 
             {/* What to Expect */}
-            <div className="bg-elevora-blue/5 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-elevora-indigo mb-4">What to Expect</h3>
+            <div className="bg-primary-accent/10 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-primary-text mb-4">What to Expect</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Before Our Call</h4>
-                  <p className="text-sm text-gray-700">You'll receive a confirmation with Zoom link. Optional: Send any materials you'd like me to review.</p>
+                  <h4 className="font-semibold text-primary-text mb-1">Before Our Call</h4>
+                  <p className="text-sm text-primary-text/80">You'll receive a confirmation with Zoom link. Optional: Send any materials you'd like me to review.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">During Our Call</h4>
-                  <p className="text-sm text-gray-700">We'll discuss your current challenges, I'll ask questions to understand your operations, and we'll identify potential quick wins.</p>
+                  <h4 className="font-semibold text-primary-text mb-1">During Our Call</h4>
+                  <p className="text-sm text-primary-text/80">We'll discuss your current challenges, I'll ask questions to understand your operations, and we'll identify potential quick wins.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">After Our Call</h4>
-                  <p className="text-sm text-gray-700">You'll receive a summary of our discussion. If we're a fit, we'll schedule free discovery sessions. If not, I'll try to point you in the right direction.</p>
+                  <h4 className="font-semibold text-primary-text mb-1">After Our Call</h4>
+                  <p className="text-sm text-primary-text/80">You'll receive a summary of our discussion. If we're a fit, we'll schedule free discovery sessions. If not, I'll try to point you in the right direction.</p>
                 </div>
               </div>
             </div>
 
             {/* Direct Contact */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-elevora-indigo">Direct Contact</h3>
+              <h3 className="text-xl font-bold text-primary-text">Direct Contact</h3>
               <div className="space-y-3">
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="flex items-center space-x-3 text-gray-700 hover:text-elevora-blue transition-colors"
+                  className="flex items-center space-x-3 text-primary-text/80 hover:text-primary-accent transition-colors"
                 >
                   <Mail className="h-5 w-5" />
                   <span>{siteConfig.email}</span>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-700 hover:text-elevora-blue transition-colors"
+                  className="flex items-center space-x-3 text-primary-text/80 hover:text-primary-accent transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
                   <span>LinkedIn Profile</span>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-700 hover:text-elevora-blue transition-colors"
+                  className="flex items-center space-x-3 text-primary-text/80 hover:text-primary-accent transition-colors"
                 >
                   <Github className="h-5 w-5" />
                   <span>GitHub Portfolio</span>
@@ -166,17 +166,17 @@ export default function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-              <h2 className="text-2xl font-bold text-elevora-indigo mb-6">Send a Message</h2>
+            <div className="card rounded-2xl p-8 shadow-lg">
+              <h2 className="text-2xl font-bold text-primary-text mb-6">Send a Message</h2>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-primary-text mb-2">
                     Your Name *
                   </label>
                   <input
                     {...register('name', { required: 'Name is required' })}
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-elevora-blue focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 bg-primary-bg border border-primary-border/30 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors text-primary-text"
                     placeholder="John Doe"
                   />
                   {errors.name && (
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-primary-text mb-2">
                     Email Address *
                   </label>
                   <input
@@ -197,7 +197,7 @@ export default function ContactPage() {
                       },
                     })}
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-elevora-blue focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 bg-primary-bg border border-primary-border/30 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors text-primary-text"
                     placeholder="john@company.com"
                   />
                   {errors.email && (
@@ -206,25 +206,25 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-primary-text mb-2">
                     Company
                   </label>
                   <input
                     {...register('company')}
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-elevora-blue focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 bg-primary-bg border border-primary-border/30 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors text-primary-text"
                     placeholder="Your Company Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-primary-text mb-2">
                     How can I help you? *
                   </label>
                   <textarea
                     {...register('message', { required: 'Message is required' })}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-elevora-blue focus:border-transparent transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-primary-bg border border-primary-border/30 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors resize-none text-primary-text"
                     placeholder="Tell me about your current challenges and what you'd like to automate..."
                   />
                   {errors.message && (
@@ -257,7 +257,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center px-6 py-3 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     'Sending...'
@@ -281,7 +281,7 @@ export default function ContactPage() {
           transition={{ duration: 0.5 }}
           className="mt-20"
         >
-          <h2 className="text-3xl font-bold text-center text-elevora-indigo mb-12">
+          <h2 className="text-3xl font-bold text-center text-primary-text mb-12">
             Frequently Asked Questions
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -292,10 +292,10 @@ export default function ContactPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-gray-50 rounded-xl p-6"
+                className="bg-primary-accent/10 rounded-xl p-6"
               >
-                <h3 className="font-semibold text-elevora-indigo mb-2">{faq.question}</h3>
-                <p className="text-gray-700 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-primary-text mb-2">{faq.question}</h3>
+                <p className="text-primary-text/80 text-sm">{faq.answer}</p>
               </motion.div>
             ))}
           </div>

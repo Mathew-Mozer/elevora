@@ -98,7 +98,7 @@ const steps = [
 
 export default function ProcessTimeline() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-primary-bg">
       <div className="container-width section-padding">
         {/* Page Header */}
         <motion.div
@@ -107,16 +107,16 @@ export default function ProcessTimeline() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-elevora-indigo mb-6">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
             Your Journey from Chaos to Clarity
           </h1>
-          <p className="text-xl text-elevora-slate max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-primary-text/80 max-w-3xl mx-auto mb-8">
             A proven 4-step process that takes you from manual processes to intelligent automation, 
             with no risk and complete transparency.
           </p>
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-elevora-green/10 border border-elevora-green/20 rounded-full">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-accent/10 border border-primary-accent/20 rounded-full">
             <Gift className="h-5 w-5 text-elevora-green" />
-            <span className="text-sm font-medium text-elevora-green">
+            <span className="text-sm font-medium gradient-text">
               Get up to 5 hours of discovery absolutely FREE
             </span>
           </div>
@@ -125,7 +125,7 @@ export default function ProcessTimeline() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 hidden lg:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-border/20 hidden lg:block" />
 
           <div className="space-y-12">
             {steps.map((step, index) => {
@@ -148,46 +148,46 @@ export default function ProcessTimeline() {
                     </div>
 
                     {/* Content */}
-                    <div className={`lg:col-span-11 mt-4 lg:mt-0 ${step.highlight ? 'bg-gradient-to-br from-elevora-green/5 to-elevora-blue/5 rounded-2xl p-8 border-2 border-elevora-green/20' : ''}`}>
+                    <div className={`lg:col-span-11 mt-4 lg:mt-0 ${step.highlight ? 'bg-primary-accent/10 rounded-2xl p-8 border-2 border-primary-accent/20' : ''}`}>
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <div className="flex items-center space-x-3 mb-2">
                             <span className={`text-4xl font-bold text-elevora-${step.color}/20`}>
                               {step.number}
                             </span>
-                            <h2 className="text-2xl font-bold text-elevora-indigo">
+                            <h2 className="text-2xl font-bold text-primary-text">
                               {step.title}
                             </h2>
                             {step.highlight && (
-                              <span className="px-3 py-1 bg-elevora-green text-white rounded-full text-xs font-bold">
+                              <span className="px-3 py-1 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white rounded-full text-xs font-bold">
                                 FREE
                               </span>
                             )}
                           </div>
-                          <p className="text-elevora-slate mb-1">{step.description}</p>
-                          <p className="text-sm font-medium text-elevora-blue">Duration: {step.duration}</p>
+                          <p className="text-primary-text/80 mb-1">{step.description}</p>
+                          <p className="text-sm font-medium gradient-text">Duration: {step.duration}</p>
                         </div>
                       </div>
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <h3 className="font-semibold text-gray-900 mb-3">What We'll Do</h3>
+                          <h3 className="font-semibold text-primary-text mb-3">What We'll Do</h3>
                           <ul className="space-y-2">
                             {step.details.map((detail, idx) => (
                               <li key={idx} className="flex items-start space-x-2">
                                 <CheckCircle className="h-4 w-4 text-elevora-green flex-shrink-0 mt-0.5" />
-                                <span className="text-sm text-gray-700">{detail}</span>
+                                <span className="text-sm text-primary-text/80">{detail}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900 mb-3">What You'll Get</h3>
+                          <h3 className="font-semibold text-primary-text mb-3">What You'll Get</h3>
                           <ul className="space-y-2">
                             {step.deliverables.map((deliverable, idx) => (
                               <li key={idx} className="flex items-start space-x-2">
                                 <CheckCircle className="h-4 w-4 text-elevora-blue flex-shrink-0 mt-0.5" />
-                                <span className="text-sm text-gray-700">{deliverable}</span>
+                                <span className="text-sm text-primary-text/80">{deliverable}</span>
                               </li>
                             ))}
                           </ul>
@@ -207,7 +207,7 @@ export default function ProcessTimeline() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-20 bg-elevora-indigo rounded-2xl p-12 text-white"
+          className="mt-20 bg-gradient-to-r from-primary-accent to-primary-accent-light rounded-2xl p-12 text-white"
         >
           <h2 className="text-3xl font-bold mb-8 text-center">Why This Approach Works</h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -252,23 +252,23 @@ export default function ProcessTimeline() {
           transition={{ duration: 0.5 }}
           className="text-center mt-16"
         >
-          <h3 className="text-3xl font-bold text-elevora-indigo mb-4">
+          <h3 className="text-3xl font-bold text-primary-text mb-4">
             Ready to Start Your Transformation Journey?
           </h3>
-          <p className="text-lg text-elevora-slate mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-text/80 mb-8 max-w-2xl mx-auto">
             Book your free strategy session today and discover how much time and money you could save with intelligent automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors group text-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white font-semibold rounded-lg hover:opacity-90 transition-opacity group text-lg"
             >
               Book Free Strategy Session
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/case-studies"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-elevora-indigo text-elevora-indigo font-semibold rounded-lg hover:bg-elevora-indigo hover:text-white transition-colors text-lg"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary-accent text-primary-accent font-semibold rounded-lg hover:bg-gradient-to-r hover:from-primary-accent hover:to-primary-accent-light hover:text-white transition-colors text-lg"
             >
               See Success Stories
             </Link>

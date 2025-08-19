@@ -60,7 +60,7 @@ const caseStudies = [
 
 export default function CaseStudiesPreview() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-primary-bg">
       <div className="container-width section-padding">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,10 +69,10 @@ export default function CaseStudiesPreview() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-elevora-indigo mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-text mb-4">
             Proven Results Across Industries
           </h2>
-          <p className="text-lg text-elevora-slate max-w-2xl mx-auto">
+          <p className="text-lg text-primary-text/80 max-w-2xl mx-auto">
             Real transformations delivering measurable impact for businesses like yours.
           </p>
         </motion.div>
@@ -85,44 +85,44 @@ export default function CaseStudiesPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="card overflow-hidden hover-lift"
             >
-              <div className={`h-2 bg-elevora-${study.color}`} />
+              <div className="h-2 bg-gradient-to-r from-primary-accent to-primary-accent-light" />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-elevora-indigo mb-2">
+                <h3 className="text-xl font-bold text-primary-text mb-2">
                   {study.title}
                 </h3>
-                <p className="text-sm text-elevora-slate mb-4">{study.client}</p>
+                <p className="text-sm text-primary-text/70 mb-4">{study.client}</p>
                 
                 <div className="space-y-4 mb-6">
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-700 mb-1">Challenge</h4>
-                    <p className="text-sm text-gray-600">{study.challenge}</p>
+                    <h4 className="text-sm font-semibold text-primary-text mb-1">Challenge</h4>
+                    <p className="text-sm text-primary-text/70">{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-700 mb-1">Solution</h4>
-                    <p className="text-sm text-gray-600">{study.solution}</p>
+                    <h4 className="text-sm font-semibold text-primary-text mb-1">Solution</h4>
+                    <p className="text-sm text-primary-text/70">{study.solution}</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-2 mb-6">
-                  <div className="text-center p-2 bg-gray-50 rounded">
-                    <Clock className="h-4 w-4 mx-auto text-elevora-blue mb-1" />
-                    <p className="text-xs font-semibold text-gray-700">{study.metrics.time}</p>
+                  <div className="text-center p-2 bg-primary-bg-light/30 rounded border border-primary-border/10">
+                    <Clock className="h-4 w-4 mx-auto text-primary-accent mb-1" />
+                    <p className="text-xs font-semibold text-primary-text">{study.metrics.time}</p>
                   </div>
-                  <div className="text-center p-2 bg-gray-50 rounded">
-                    <Users className="h-4 w-4 mx-auto text-elevora-green mb-1" />
-                    <p className="text-xs font-semibold text-gray-700">{study.metrics.users}</p>
+                  <div className="text-center p-2 bg-primary-bg-light/30 rounded border border-primary-border/10">
+                    <Users className="h-4 w-4 mx-auto text-primary-accent mb-1" />
+                    <p className="text-xs font-semibold text-primary-text">{study.metrics.users}</p>
                   </div>
-                  <div className="text-center p-2 bg-gray-50 rounded">
-                    <TrendingUp className="h-4 w-4 mx-auto text-elevora-gold mb-1" />
-                    <p className="text-xs font-semibold text-gray-700">{study.metrics.improvement}</p>
+                  <div className="text-center p-2 bg-primary-bg-light/30 rounded border border-primary-border/10">
+                    <TrendingUp className="h-4 w-4 mx-auto text-primary-accent-light mb-1" />
+                    <p className="text-xs font-semibold text-primary-text">{study.metrics.improvement}</p>
                   </div>
                 </div>
 
                 <Link
                   href={`/case-studies/${study.title.toLowerCase().replace(/ /g, '-')}`}
-                  className="inline-flex items-center text-elevora-blue hover:text-elevora-indigo font-medium text-sm group"
+                  className="inline-flex items-center text-primary-accent hover:text-primary-accent-light font-medium text-sm group"
                 >
                   Read Full Case Study
                   <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -141,7 +141,7 @@ export default function CaseStudiesPreview() {
         >
           <Link
             href="/case-studies"
-            className="inline-flex items-center justify-center px-6 py-3 border-2 border-elevora-indigo text-elevora-indigo font-semibold rounded-lg hover:bg-elevora-indigo hover:text-white transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-accent text-primary-text font-semibold rounded-lg hover:bg-primary-accent/10 transition-colors"
           >
             View All Case Studies
           </Link>

@@ -10,11 +10,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-primary-border/20 bg-primary-bg/90 backdrop-blur-md neon-border">
+    <header className="sticky top-0 z-50 w-full border-b border-primary-border/20 bg-primary-bg/95 backdrop-blur-md">
       <div className="container-width section-padding">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-display font-bold text-2xl text-primary-accent neon-text">
+            <span className="font-display font-bold text-2xl gradient-text">
               Elevora
             </span>
           </Link>
@@ -25,14 +25,14 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-primary-text hover:text-primary-accent transition-colors hover:neon-text"
+                className="text-sm font-medium text-primary-text/80 hover:text-primary-accent transition-colors"
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="ml-4 px-4 py-2 border border-primary-accent text-primary-accent rounded-lg hover:bg-primary-accent hover:text-primary-bg transition-all font-medium text-sm neon-border"
+              className="ml-4 px-4 py-2 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white rounded-lg hover:opacity-90 transition-all font-medium text-sm"
             >
               Book Consultation
             </Link>

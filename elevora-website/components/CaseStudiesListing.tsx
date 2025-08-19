@@ -78,7 +78,7 @@ const caseStudies = [
 
 export default function CaseStudiesListing() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-primary-bg">
       <div className="container-width section-padding">
         {/* Page Header */}
         <motion.div
@@ -87,10 +87,10 @@ export default function CaseStudiesListing() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-elevora-indigo mb-6">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
             Proven Results Across Industries
           </h1>
-          <p className="text-xl text-elevora-slate max-w-3xl mx-auto">
+          <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
             Real transformations delivering measurable impact. See how I've helped businesses eliminate manual work, 
             automate operations, and scale with confidence.
           </p>
@@ -105,7 +105,7 @@ export default function CaseStudiesListing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="card rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className={`h-3 bg-elevora-${study.color}`} />
               <div className="p-8 lg:p-12">
@@ -114,10 +114,10 @@ export default function CaseStudiesListing() {
                   <div className="lg:col-span-2">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h2 className="text-3xl font-bold text-elevora-indigo mb-2">
+                        <h2 className="text-3xl font-bold text-primary-text mb-2">
                           {study.title}
                         </h2>
-                        <p className="text-lg text-elevora-slate">{study.client}</p>
+                        <p className="text-lg text-primary-text/70">{study.client}</p>
                       </div>
                       <span className={`px-3 py-1 bg-elevora-${study.color}/10 text-elevora-${study.color} rounded-full text-sm font-medium`}>
                         {study.industry}
@@ -126,34 +126,34 @@ export default function CaseStudiesListing() {
 
                     <div className="space-y-6">
                       <div>
-                        <h3 className="font-semibold text-gray-900 mb-2">The Challenge</h3>
-                        <p className="text-gray-700">{study.challenge}</p>
+                        <h3 className="font-semibold text-primary-text mb-2">The Challenge</h3>
+                        <p className="text-primary-text/80">{study.challenge}</p>
                       </div>
 
                       <div>
-                        <h3 className="font-semibold text-gray-900 mb-2">The Solution</h3>
-                        <p className="text-gray-700">{study.solution}</p>
+                        <h3 className="font-semibold text-primary-text mb-2">The Solution</h3>
+                        <p className="text-primary-text/80">{study.solution}</p>
                       </div>
 
                       <div>
-                        <h3 className="font-semibold text-gray-900 mb-3">Key Outcomes</h3>
+                        <h3 className="font-semibold text-primary-text mb-3">Key Outcomes</h3>
                         <ul className="space-y-2">
                           {study.keyOutcomes.slice(0, 3).map((outcome, idx) => (
                             <li key={idx} className="flex items-start space-x-2">
                               <CheckCircle className="h-5 w-5 text-elevora-green flex-shrink-0 mt-0.5" />
-                              <span className="text-gray-700">{outcome}</span>
+                              <span className="text-primary-text/80">{outcome}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
 
                       <div>
-                        <h3 className="font-semibold text-gray-900 mb-3">Technologies Used</h3>
+                        <h3 className="font-semibold text-primary-text mb-3">Technologies Used</h3>
                         <div className="flex flex-wrap gap-2">
                           {study.technologies.map((tech) => (
                             <span
                               key={tech}
-                              className="px-3 py-1 bg-gray-100 text-gray-700 rounded-lg text-sm"
+                              className="px-3 py-1 bg-primary-accent/10 text-primary-text/70 rounded-lg text-sm"
                             >
                               {tech}
                             </span>
@@ -165,30 +165,30 @@ export default function CaseStudiesListing() {
 
                   {/* Metrics */}
                   <div className="space-y-6">
-                    <div className="bg-gray-50 rounded-xl p-6">
-                      <h4 className="font-semibold text-gray-900 mb-4">Impact Metrics</h4>
+                    <div className="bg-primary-accent/10 rounded-xl p-6">
+                      <h4 className="font-semibold text-primary-text mb-4">Impact Metrics</h4>
                       <div className="space-y-4">
-                        <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-center p-4 bg-primary-bg rounded-lg border border-primary-border/20">
                           <Clock className="h-6 w-6 mx-auto text-elevora-blue mb-2" />
-                          <p className="text-2xl font-bold text-elevora-indigo">{study.results.time}</p>
-                          <p className="text-sm text-gray-600">Time Saved</p>
+                          <p className="text-2xl font-bold gradient-text">{study.results.time}</p>
+                          <p className="text-sm text-primary-text/70">Time Saved</p>
                         </div>
-                        <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-center p-4 bg-primary-bg rounded-lg border border-primary-border/20">
                           <Users className="h-6 w-6 mx-auto text-elevora-green mb-2" />
-                          <p className="text-2xl font-bold text-elevora-indigo">{study.results.users}</p>
-                          <p className="text-sm text-gray-600">Users Impacted</p>
+                          <p className="text-2xl font-bold gradient-text">{study.results.users}</p>
+                          <p className="text-sm text-primary-text/70">Users Impacted</p>
                         </div>
-                        <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-center p-4 bg-primary-bg rounded-lg border border-primary-border/20">
                           <TrendingUp className="h-6 w-6 mx-auto text-elevora-gold mb-2" />
-                          <p className="text-2xl font-bold text-elevora-indigo">{study.results.improvement}</p>
-                          <p className="text-sm text-gray-600">Performance Gain</p>
+                          <p className="text-2xl font-bold gradient-text">{study.results.improvement}</p>
+                          <p className="text-sm text-primary-text/70">Performance Gain</p>
                         </div>
                       </div>
                     </div>
 
                     <div className="text-center">
-                      <p className="text-sm text-gray-600 mb-2">Project Duration</p>
-                      <p className="text-lg font-semibold text-elevora-indigo">{study.duration}</p>
+                      <p className="text-sm text-primary-text/70 mb-2">Project Duration</p>
+                      <p className="text-lg font-semibold gradient-text">{study.duration}</p>
                     </div>
                   </div>
                 </div>
@@ -203,17 +203,17 @@ export default function CaseStudiesListing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mt-16 p-12 bg-gradient-to-br from-elevora-blue/10 to-elevora-green/10 rounded-2xl"
+          className="text-center mt-16 p-12 bg-primary-accent/10 rounded-2xl border border-primary-border/20"
         >
-          <h3 className="text-3xl font-bold text-elevora-indigo mb-4">
+          <h3 className="text-3xl font-bold text-primary-text mb-4">
             Ready to Be the Next Success Story?
           </h3>
-          <p className="text-lg text-elevora-slate mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-text/80 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can transform your manual processes into intelligent systems that drive real results.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-elevora-blue text-white font-semibold rounded-lg hover:bg-elevora-indigo transition-colors group text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-accent to-primary-accent-light text-white font-semibold rounded-lg hover:opacity-90 transition-opacity group text-lg"
           >
             Start Your Transformation
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
