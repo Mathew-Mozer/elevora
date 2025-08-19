@@ -20,17 +20,17 @@ export const siteConfig = {
     { name: 'Services', href: '/services' },
     { name: 'Case Studies', href: '/case-studies' },
     { name: 'Process', href: '/process' },
-    { name: 'Skills', href: '/skills' },
+    { name: 'Solutions', href: '/skills' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ],
   
   // Stats
   stats: {
-    yearsExperience: 5,
-    codeContributions: 7000,
-    hoursAutomated: 200,
-    projectsDelivered: 50,
+    yearsExperience: 'Years of Experience',
+    transformations: 'Successful Transformations',
+    hoursAutomated: 'Hours Automated Monthly',
+    industries: 'Industries Served',
   },
   
   // Services
@@ -45,7 +45,7 @@ export const siteConfig = {
         'Build custom workflows for your specific needs',
         'Integrate disparate systems into one unified platform',
       ],
-      result: 'Automated 80% of routine patient follow-ups, saving a healthcare company 200+ hours monthly',
+      result: 'Automated the majority of routine patient follow-ups for a healthcare company',
     },
     {
       title: 'Spreadsheet to System Transformation',
@@ -57,7 +57,7 @@ export const siteConfig = {
         'Create user-friendly interfaces for your team',
         'Implement data validation and error prevention',
       ],
-      result: 'Transformed tournament management from 15 spreadsheets to one unified platform',
+      result: 'Transformed tournament management from multiple spreadsheets to one unified platform',
     },
     {
       title: 'AI-Powered Intelligence',
@@ -67,9 +67,9 @@ export const siteConfig = {
         'Implement smart search across all your documents',
         'Build chatbots that actually understand your business',
         'Create predictive analytics for better decisions',
-        'Deploy RAG systems for instant knowledge retrieval',
+        'Deploy intelligent knowledge systems for instant information access',
       ],
-      result: 'Built RAG system improving document search accuracy by 75%',
+      result: 'Built intelligent search system with dramatically improved document retrieval',
     },
     {
       title: 'Custom Business Platforms',
@@ -85,32 +85,53 @@ export const siteConfig = {
     },
   ],
   
-  // Tech Stack
-  techStack: {
-    'AI/ML': {
-      items: ['RAG Systems', 'Vector Databases', 'OpenAI', 'LangChain', 'Embeddings'],
-      level: 90,
-      years: 2,
+  // Problems We Solve
+  problemsSolved: {
+    'Healthcare Overwhelm': {
+      problem: 'Manual patient follow-ups consuming staff time',
+      solution: 'Elevora automates the majority of routine tasks',
+      impact: 'Significant time savings for healthcare staff',
+      icon: 'Heart',
     },
-    'Frontend': {
-      items: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
-      level: 95,
-      years: 5,
+    'Tournament Chaos': {
+      problem: 'Multiple spreadsheets to manage single tournament',
+      solution: 'Elevora creates one unified platform',
+      impact: 'Registration time reduced to seconds',
+      icon: 'Trophy',
     },
-    'Backend': {
-      items: ['Node.js', 'NestJS', 'GraphQL', 'REST APIs', 'PostgreSQL'],
-      level: 92,
-      years: 5,
+    'Recruitment Bottleneck': {
+      problem: 'Manual candidate tracking across spreadsheets',
+      solution: 'Elevora processes thousands of leads automatically',
+      impact: 'Dramatically faster response times',
+      icon: 'Users',
     },
-    'Cloud & DevOps': {
-      items: ['AWS', 'Docker', 'Kubernetes', 'DataDog', 'CI/CD'],
-      level: 85,
-      years: 4,
+    'Lost Information': {
+      problem: "Can't find documents quickly",
+      solution: 'Elevora builds intelligent search systems',
+      impact: 'Instant access to critical information',
+      icon: 'Search',
     },
-    'Databases': {
-      items: ['PostgreSQL', 'MongoDB', 'Redis', 'Neo4j', 'Vector DBs'],
-      level: 88,
-      years: 5,
+    'Slow Decisions': {
+      problem: 'Days to compile reports',
+      solution: 'Elevora delivers real-time dashboards',
+      impact: 'Make informed decisions instantly',
+      icon: 'TrendingUp',
     },
+  },
+  
+  // The Elevora Promise
+  promise: [
+    "Give Elevora your toughest process, and we'll make it simple",
+    "Elevora doesn't just build systems — we build clarity",
+    "Once we understand your problem, the solution almost builds itself",
+    "Prototypes speak louder than proposals",
+  ],
+  
+  // Founder
+  founder: {
+    name: 'Mathew Mozer',
+    title: 'Founder & Lead Consultant',
+    bio: "With years of experience transforming how businesses operate, Mathew founded Elevora to help companies escape manual, error-prone processes and build intelligent, automated systems that scale.",
+    quote: "I've seen too many talented business owners drowning in manual processes when technology could set them free. After implementing systems that saved hundreds of hours at Fortune 500 companies, I realized smaller businesses need these capabilities even more. That's why I created Elevora - to bring enterprise-level transformation to growing businesses.",
   },
 }

@@ -24,10 +24,10 @@ export default function ServicesDetail() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
-            How I Transform Your Business
+            How Elevora Transforms Your Business
           </h1>
           <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
-            From automation to AI, I provide end-to-end solutions that eliminate manual work and unlock growth. 
+            From automation to AI, Elevora provides end-to-end solutions that eliminate manual work and unlock growth. 
             Every solution is tailored to your specific needs and designed to deliver measurable ROI.
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ export default function ServicesDetail() {
                   </p>
 
                   <div className="space-y-3 mb-8">
-                    <h3 className="font-semibold text-primary-text">What I Do:</h3>
+                    <h3 className="font-semibold text-primary-text">What Elevora Does:</h3>
                     {service.benefits.map((benefit, idx) => (
                       <motion.div
                         key={idx}

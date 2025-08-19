@@ -1,7 +1,7 @@
 import PageWrapper from '@/components/PageWrapper'
 import Hero from '@/components/Hero'
 import ProblemSolution from '@/components/ProblemSolution'
-import SkillsShowcase from '@/components/SkillsShowcase'
+import ProblemsShowcase from '@/components/ProblemsShowcase'
 import ServicesPreview from '@/components/ServicesPreview'
 import CaseStudiesPreview from '@/components/CaseStudiesPreview'
 import CTA from '@/components/CTA'
@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <Hero />
         <ProblemSolution />
-        <SkillsShowcase />
+        <ProblemsShowcase />
         <ServicesPreview />
         <CaseStudiesPreview />
         <CTA />

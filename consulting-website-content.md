@@ -48,12 +48,12 @@
 
 ## Services Page
 
-### Page Title: How I Transform Your Business
+### Page Title: How Elevora Transforms Your Business
 
 ### Service 1: Process Automation & Integration
 **Description:** Connect your existing tools and automate repetitive tasks.
 
-**What I Do:**
+**What Elevora Does:**
 - Connect your existing tools (CRM, accounting, inventory)
 - Automate repetitive tasks and data entry
 - Build custom workflows for your specific needs
@@ -64,7 +64,7 @@
 ### Service 2: Spreadsheet to System Transformation
 **Description:** Convert complex Excel files into real business systems.
 
-**What I Do:**
+**What Elevora Does:**
 - Convert complex Excel files into real databases
 - Build custom dashboards with real-time data
 - Create user-friendly interfaces for your team
@@ -75,7 +75,7 @@
 ### Service 3: AI-Powered Intelligence
 **Description:** Add AI capabilities to understand and automate complex decisions.
 
-**What I Do:**
+**What Elevora Does:**
 - Implement smart search across all your documents
 - Build chatbots that actually understand your business
 - Create predictive analytics for better decisions
@@ -86,7 +86,7 @@
 ### Service 4: Custom Business Platforms
 **Description:** Build modern web applications tailored to your operations.
 
-**What I Do:**
+**What Elevora Does:**
 - Design systems specifically for your operations
 - Modern web applications accessible anywhere
 - Mobile-responsive for field teams
@@ -108,7 +108,7 @@
 - No visibility into patient engagement
 - Slow response times to patient inquiries
 
-**The Solution:**
+**The Elevora Solution:**
 - Built AI-powered chat system for intelligent patient responses
 - Integrated healthcare records systems for automatic data synchronization
 - Automated appointment reminders and follow-up sequences
@@ -135,7 +135,7 @@
 - No real-time financial visibility
 - Error-prone manual processes
 
-**The Solution:**
+**The Elevora Solution:**
 - Built comprehensive tournament management system
 - Automated hotel assignments with intelligent matching
 - Created financial reconciliation engine with automatic credit tracking
@@ -162,7 +162,7 @@
 - Slow response times to candidates
 - Disconnected from company CRM
 
-**The Solution:**
+**The Elevora Solution:**
 - Built modern integration architecture for rapid development
 - Implemented AI-powered interview assessment system
 - Created automated campaign management workflows
@@ -200,7 +200,7 @@
 
 ### Step 2: Discovery & Analysis (Up to 5 hours - FREE)
 
-**What I'll Do:**
+**What Elevora Will Do:**
 - Map your existing processes in detail
 - Identify all data sources and systems
 - Interview key stakeholders
@@ -239,7 +239,7 @@
 
 - **No Risk:** You get value before spending money
 - **Full Clarity:** Clear roadmap before any commitment
-- **Proven Expertise:** See my capabilities during discovery
+- **Proven Expertise:** See Elevora's capabilities during discovery
 - **No Surprises:** Fixed scope and timeline before starting
 
 ---
@@ -248,61 +248,65 @@
 
 ### Headline: From Spreadsheet Chaos to System Clarity
 
-### Who I Am
+### Meet the Founder
 
 **Mathew Mozer**  
-Digital Transformation Consultant & Process Automation Expert
+Founder & Lead Consultant, Elevora
 
-With years of experience transforming how businesses operate, I specialize in taking companies from manual, error-prone processes to intelligent, automated systems that scale.
+With years of experience transforming how businesses operate, Mathew founded Elevora to help companies escape manual, error-prone processes and build intelligent, automated systems that scale.
 
-### What I Bring
+### The Elevora Approach
 
-**Proven Results**
-- Deep expertise in artificial intelligence and intelligent automation
-- End-to-end system design and implementation
-- Healthcare, SaaS, and sports industry experience
-- Consistent track record of significant efficiency improvements
+**Systems Thinking**
+- Elevora spots inefficiencies across workflows and redesigns them into cohesive systems
+- We see order in chaos, uncovering connections and problems others miss
+- Every transformation follows clear phases: Discovery → Prototype → Solution → Launch
 
-**Business Understanding**
-- Translate complex business needs into elegant solutions
-- Focus on ROI and measurable business impact
-- Experience with healthcare and financial compliance
-- Deep understanding of operational workflows and bottlenecks
+**True Partnership**
+- Elevora translates complex concepts into plain business language
+- We guide you through the journey, building your confidence alongside your system
+- Everything ties to business outcomes - time saved, errors reduced, revenue unlocked
 
-### Why I Do This
+### Why Elevora Exists
 
-I've seen too many talented business owners drowning in manual processes when technology could set them free. After implementing AI systems that saved hundreds of hours at Fortune 500 companies, I realized smaller businesses need these capabilities even more.
+"I've seen too many talented business owners drowning in manual processes when technology could set them free. After implementing systems that saved hundreds of hours at Fortune 500 companies, I realized smaller businesses need these capabilities even more. That's why I created Elevora - to bring enterprise-level transformation to growing businesses."
 
-Every business has unique challenges, but the solution isn't always unique—it's about applying proven patterns in the right way.
+- Mathew Mozer, Founder
 
-### My Approach
+### The Elevora Process
 
 1. **Start with Understanding:** Deep dive into your business before proposing solutions
 2. **Build What You Need:** No over-engineering, just solving real problems
 3. **Measure Everything:** Focus on ROI and quantifiable improvements
 4. **Transfer Knowledge:** Documentation and training so you're never dependent
 
-### Professional Experience
+### Problems Elevora Solves
 
-**Track Record**
-- Numerous successful digital transformations delivered
-- Pioneer in healthcare AI implementations
-- Led teams through complex system overhauls
-- Built platforms serving thousands of daily users
+**Healthcare Overwhelm**
+- "Manual patient follow-ups consuming staff time" → Elevora automates the majority of routine tasks
 
-**Core Capabilities**
-- Modern web application development
-- Artificial intelligence and machine learning integration
-- Database design and optimization
-- Cloud infrastructure and scalability
-- Healthcare, financial, and data compliance
+**Tournament Chaos**
+- "Multiple spreadsheets to manage single tournament" → Elevora creates one unified platform
 
-### Recent Achievements
+**Recruitment Bottleneck**
+- "Manual candidate tracking across spreadsheets" → Elevora processes thousands of leads automatically
 
-- Pioneered intelligent search system in healthcare with major accuracy improvements
-- Dramatically reduced patient follow-up time through automation
-- Built tournament platform handling large events with much faster registration
-- Achieved exceptional uptime across multiple business-critical systems
+**Lost Information**
+- "Can't find documents quickly" → Elevora builds intelligent search with dramatic accuracy improvements
+
+**Slow Decisions**
+- "Days to compile reports" → Elevora delivers real-time dashboards and insights
+
+### The Elevora Promise
+
+- "Give Elevora your toughest process, and we'll make it simple"
+- "Elevora doesn't just build systems — we build clarity"
+- "Once we understand your problem, the solution almost builds itself"
+- "Prototypes speak louder than proposals"
+
+### The Elevora Team
+
+While Mathew leads every client engagement personally, Elevora maintains a network of specialized experts who contribute when specific expertise is needed, ensuring you always get the best solution for your unique challenges.
 
 ---
 
@@ -325,14 +329,14 @@ Select any available time that works for you. No preparation needed—just bring
 
 **During Our Call:**
 - We'll discuss your current challenges
-- I'll ask questions to understand your operations
+- Mathew will ask questions to understand your operations
 - We'll identify potential quick wins
 - You'll get honest feedback on feasibility
 
 **After Our Call:**
 - You'll receive a summary of our discussion
 - If we're a fit, we'll schedule free discovery sessions
-- If not, I'll try to point you in the right direction
+- If not, we'll try to point you in the right direction
 
 ### Direct Contact
 
@@ -342,28 +346,28 @@ Select any available time that works for you. No preparation needed—just bring
 ### Frequently Asked Questions
 
 **Q: What size businesses do you work with?**  
-A: Typically businesses with 10-100 employees, but I evaluate based on process complexity, not company size. If you're drowning in manual work, we should talk.
+A: Typically businesses with 10-100 employees, but Elevora evaluates based on process complexity, not company size. If you're drowning in manual work, we should talk.
 
 **Q: What if my industry is highly specialized?**  
-A: I've worked in healthcare (with compliance requirements), finance, and sports. Part of my value is bringing cross-industry insights. I learn your domain during the free discovery phase.
+A: Elevora has worked in healthcare (with compliance requirements), finance, and sports. Part of our value is bringing cross-industry insights. We learn your domain during the free discovery phase.
 
 **Q: How long do projects typically take?**  
 A: Quick wins can be deployed in 2-4 weeks. Full transformations typically take 2-6 months, delivered in phases so you see value quickly.
 
 **Q: What technologies do you use?**  
-A: I use modern, proven technologies tailored to your needs. Everything I build is maintainable, scalable, and uses industry standards.
+A: Elevora uses modern, proven technologies tailored to your needs. Everything we build is maintainable, scalable, and uses industry standards.
 
 **Q: Do you provide ongoing support?**  
-A: Yes, I offer maintenance and enhancement packages after launch. I also ensure you have documentation and training to be self-sufficient.
+A: Yes, Elevora offers maintenance and enhancement packages after launch. We also ensure you have documentation and training to be self-sufficient.
 
 **Q: How do you charge for projects?**  
-A: After the free discovery, I provide fixed-price proposals for defined scopes. This gives you cost certainty and aligns our incentives.
+A: After the free discovery, Elevora provides fixed-price proposals for defined scopes. This gives you cost certainty and aligns our incentives.
 
 **Q: What if we need changes during development?**  
-A: I work iteratively with regular check-ins. Minor adjustments are expected and included. Major scope changes are discussed and re-quoted.
+A: Elevora works iteratively with regular check-ins. Minor adjustments are expected and included. Major scope changes are discussed and re-quoted.
 
 **Q: Can you work with our existing team?**  
-A: Absolutely. I can lead, collaborate, or support your team as needed. Knowledge transfer is always included.
+A: Absolutely. Elevora can lead, collaborate, or support your team as needed. Knowledge transfer is always included.
 
 ---
 

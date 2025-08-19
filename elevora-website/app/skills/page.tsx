@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import SkillsShowcase from '@/components/SkillsShowcase'
+import ProblemsShowcase from '@/components/ProblemsShowcase'
 
 export const metadata: Metadata = {
-  title: 'Skills & Expertise',
-  description: 'Deep technical expertise across AI/ML, full-stack development, and cloud infrastructure.',
+  title: 'Solutions - Problems Elevora Solves',
+  description: 'From healthcare overwhelm to recruitment bottlenecks, see how Elevora transforms business challenges into automated solutions.',
 }
 
 export default function SkillsPage() {
@@ -14,7 +14,7 @@ export default function SkillsPage() {
       <Header />
       <main>
         <div className="pt-20">
-          <SkillsShowcase />
+          <ProblemsShowcase />
         </div>
       </main>
       <Footer />
