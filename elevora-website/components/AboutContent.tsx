@@ -17,10 +17,10 @@ export default function AboutContent() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
-            From Spreadsheet Chaos to System Clarity
+            Fixing What&apos;s Actually Broken
           </h1>
           <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
-            Elevora builds clarity from complexity, transforming how businesses operate
+            Business consultants who diagnose first, then prescribe the simplest effective solution
           </p>
         </motion.div>
 
@@ -80,9 +80,9 @@ export default function AboutContent() {
                 <h3 className="text-xl font-semibold text-primary-text">Systems Thinking</h3>
               </div>
               <ul className="space-y-2 text-primary-text/80">
-                <li>• Elevora spots inefficiencies across workflows and redesigns them into cohesive systems</li>
-                <li>• We see order in chaos, uncovering connections and problems others miss</li>
-                <li>• Every transformation follows clear phases: Discovery → Prototype → Solution → Launch</li>
+                <li>• We diagnose what&apos;s actually costing you time and money</li>
+                <li>• We see the whole picture, not just the obvious symptoms</li>
+                <li>• Every engagement starts with understanding, not assumptions</li>
               </ul>
             </div>
 
@@ -92,9 +92,9 @@ export default function AboutContent() {
                 <h3 className="text-xl font-semibold text-primary-text">True Partnership</h3>
               </div>
               <ul className="space-y-2 text-primary-text/80">
-                <li>• Elevora translates complex concepts into plain business language</li>
-                <li>• We guide you through the journey, building your confidence alongside your system</li>
-                <li>• Everything ties to business outcomes - time saved, errors reduced, revenue unlocked</li>
+                <li>• We&apos;re solution agnostic - custom code, existing tools, or process redesign</li>
+                <li>• We won&apos;t over-engineer when simple works</li>
+                <li>• Everything measured in hours saved and friction removed</li>
               </ul>
             </div>
           </div>
@@ -114,11 +114,10 @@ export default function AboutContent() {
           
           <div className="card bg-gradient-to-br from-primary-accent/5 to-primary-accent-light/5 p-8 md:p-12">
             <p className="text-lg text-primary-text/80 mb-6">
-              Every business has unique challenges, but the solution isn&apos;t always unique—it&apos;s about applying proven patterns in the right way.
+              Too many consultants have only one solution for every problem. Too many businesses get sold complexity when simplicity would work.
             </p>
             <p className="text-lg text-primary-text/80">
-              Elevora exists to bring enterprise-level transformation capabilities to growing businesses. 
-              We believe every company deserves systems that work as hard as they do.
+              Elevora exists to be different. We&apos;re the consultants who actually listen, diagnose properly, and recommend the simplest solution that works—whether that&apos;s AI, custom software, or just fixing your spreadsheet.
             </p>
           </div>
         </motion.div>
@@ -137,10 +136,10 @@ export default function AboutContent() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '1', title: 'Start with Understanding', desc: 'Deep dive into your business before proposing solutions' },
-              { step: '2', title: 'Build What You Need', desc: 'No over-engineering, just solving real problems' },
-              { step: '3', title: 'Measure Everything', desc: 'Focus on ROI and quantifiable improvements' },
-              { step: '4', title: 'Transfer Knowledge', desc: 'Documentation and training so you\'re never dependent' },
+              { step: '1', title: 'Diagnose First', desc: 'Find what&apos;s actually broken before prescribing solutions' },
+              { step: '2', title: 'Right Solution', desc: 'Custom code, existing tools, or process fix—whatever works' },
+              { step: '3', title: 'Quick Wins', desc: 'Immediate improvements while building long-term solutions' },
+              { step: '4', title: 'Measure Impact', desc: 'Track hours saved and friction removed' },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -193,7 +192,7 @@ export default function AboutContent() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-primary-text/80 mb-8 max-w-2xl mx-auto">
-            Give Elevora your toughest process, and we&apos;ll make it simple.
+            Let&apos;s diagnose what&apos;s really slowing you down and fix it with the right solution.
           </p>
           <Link 
             href="/contact"

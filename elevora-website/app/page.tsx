@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import ProblemSolution from '@/components/ProblemSolution'
 import ProblemsShowcase from '@/components/ProblemsShowcase'
 import ServicesPreview from '@/components/ServicesPreview'
-import CaseStudiesPreview from '@/components/CaseStudiesPreview'
 import CTA from '@/components/CTA'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
         <ProblemSolution />
         <ProblemsShowcase />
         <ServicesPreview />
-        <CaseStudiesPreview />
         <CTA />
       </main>
     </PageWrapper>

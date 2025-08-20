@@ -28,7 +28,7 @@ export default function Hero() {
           >
             <Zap className="h-4 w-4 text-primary-accent" />
             <span className="text-sm font-medium text-primary-accent">
-              Free 60-min consultation + 5 hours discovery
+              Free consultation to diagnose your biggest bottlenecks
             </span>
           </motion.div>
 
@@ -39,8 +39,8 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary-text"
           >
-            Transform Your Manual Processes into{' '}
-            <span className="gradient-text">Intelligent Business Systems</span>
+            Business Transformation Through{' '}
+            <span className="gradient-text">Smart Solutions</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -50,7 +50,7 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="text-xl text-primary-text/80 mb-8"
           >
-            Stop losing hours to spreadsheets. Start scaling with AI-powered automation.
+            Stop losing hours to broken processes. Whether it&apos;s AI automation, custom software, or fixing your outdated systems—we implement what actually works.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -68,10 +68,10 @@ export default function Hero() {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/case-studies"
+              href="/services"
               className="inline-flex items-center justify-center px-6 py-3 border border-primary-accent/30 text-primary-text font-semibold rounded-lg hover:bg-primary-accent/10 transition-all"
             >
-              View Case Studies
+              Explore Our Solutions
             </Link>
           </motion.div>
 
@@ -83,10 +83,10 @@ export default function Hero() {
             className="grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { value: '5+', label: 'Years Experience' },
-              { value: '7,000+', label: 'Code Contributions' },
-              { value: '200+', label: 'Hours Saved Monthly' },
-              { value: '99.9%', label: 'System Uptime' },
+              { value: 'Hours', label: 'Not Minutes Saved' },
+              { value: '10x', label: 'Efficiency Gains' },
+              { value: '3→0.3', label: 'Hours to Minutes' },
+              { value: 'Fast', label: 'ROI in Weeks' },
             ].map((stat, index) => (
               <motion.div
                 key={index}

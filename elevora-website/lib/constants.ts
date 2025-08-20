@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Elevora Technologies',
-  tagline: 'Transform Your Manual Processes into Intelligent Business Systems',
-  description: 'Stop losing hours to spreadsheets. Start scaling with AI-powered automation.',
+  tagline: 'Business Transformation Through Smart Solutions',
+  description: 'Stop losing hours to broken processes. Whether it\'s AI automation, custom software, or fixing your outdated systems—we implement what actually works.',
   url: 'https://elevora.tech',
   email: 'hello@elevora.tech',
   
@@ -18,9 +18,8 @@ export const siteConfig = {
   // Navigation
   nav: [
     { name: 'Services', href: '/services' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Process', href: '/process' },
     { name: 'Solutions', href: '/skills' },
+    { name: 'Process', href: '/process' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ],
@@ -36,102 +35,112 @@ export const siteConfig = {
   // Services
   services: [
     {
-      title: 'Process Automation & Integration',
-      description: 'Connect your existing tools and automate repetitive tasks.',
+      title: 'Process Transformation',
+      description: 'Turn your clumsy workflows into smooth operations.',
       icon: 'Workflow',
       benefits: [
-        'Connect existing tools (CRM, accounting, inventory)',
-        'Automate repetitive tasks and data entry',
-        'Build custom workflows for your specific needs',
-        'Integrate disparate systems into one unified platform',
+        'Build a true business operating system from scattered processes',
+        'Assess, redesign, and implement using whatever tools make sense',
+        'Quick wins first, then systematic transformation',
+        'Custom solutions or smart integrations—whatever works best',
       ],
-      result: 'Automated the majority of routine patient follow-ups for a healthcare company',
+      result: 'Reduced daily reporting from 3 hours to 3 minutes for a healthcare company',
     },
     {
-      title: 'Spreadsheet to System Transformation',
-      description: 'Convert complex Excel files into real business systems.',
+      title: 'Information Architecture & Access',
+      description: 'Stop wasting hours searching for information.',
       icon: 'Database',
       benefits: [
-        'Convert complex Excel files into real databases',
-        'Build custom dashboards with real-time data',
-        'Create user-friendly interfaces for your team',
-        'Implement data validation and error prevention',
+        'Fix outdated websites and systems causing daily friction',
+        'Create single sources of truth for your data',
+        'Build intuitive dashboards that actually get used',
+        'Organize scattered information into findable systems',
       ],
-      result: 'Transformed tournament management from multiple spreadsheets to one unified platform',
+      result: 'Saved team 10+ hours weekly by fixing information architecture',
     },
     {
-      title: 'AI-Powered Intelligence',
-      description: 'Add AI capabilities to understand and automate complex decisions.',
+      title: 'Strategic AI Implementation',
+      description: 'Use AI where it makes sense—not everywhere.',
       icon: 'Brain',
       benefits: [
-        'Implement smart search across all your documents',
-        'Build chatbots that actually understand your business',
-        'Create predictive analytics for better decisions',
-        'Deploy intelligent knowledge systems for instant information access',
+        'Skip steps competitors still do manually',
+        'Implement AI thoughtfully, not just because it\'s trendy',
+        'Choose between custom AI or existing tools like ChatGPT',
+        'Train your team to leverage AI effectively',
       ],
-      result: 'Built intelligent search system with dramatically improved document retrieval',
+      result: 'Helped company get ahead of competitors by strategically implementing AI',
     },
     {
-      title: 'Custom Business Platforms',
-      description: 'Build modern web applications tailored to your operations.',
+      title: 'Smart Solutions Selection',
+      description: 'Custom code or existing tools—we recommend what actually works.',
       icon: 'Globe',
       benefits: [
-        'Design systems specifically for your operations',
-        'Modern web applications accessible anywhere',
-        'Mobile-responsive for field teams',
-        'Secure, scalable, and maintainable',
+        'Sometimes you need custom software, sometimes you need Zapier',
+        'We recommend what\'s fastest and most cost-effective',
+        'No over-engineering—just results',
+        'Integration of best-in-class tools when they fit',
       ],
-      result: 'Built recruitment platform handling thousands of candidates automatically',
+      result: 'Saved client $100K by recommending existing tools instead of custom build',
     },
   ],
   
   // Problems We Solve
   problemsSolved: {
-    'Healthcare Overwhelm': {
-      problem: 'Manual patient follow-ups consuming staff time',
-      solution: 'Elevora automates the majority of routine tasks',
-      impact: 'Significant time savings for healthcare staff',
-      icon: 'Heart',
+    'The 3-Hour Report': {
+      problem: 'What takes your team hours to compile, a proper system delivers instantly',
+      solution: 'Elevora builds automated reporting that updates in real-time',
+      impact: 'From 3 hours daily to 3 seconds on-demand',
+      icon: 'Clock',
     },
-    'Tournament Chaos': {
-      problem: 'Multiple spreadsheets to manage single tournament',
-      solution: 'Elevora creates one unified platform',
-      impact: 'Registration time reduced to seconds',
-      icon: 'Trophy',
-    },
-    'Recruitment Bottleneck': {
-      problem: 'Manual candidate tracking across spreadsheets',
-      solution: 'Elevora processes thousands of leads automatically',
-      impact: 'Dramatically faster response times',
-      icon: 'Users',
-    },
-    'Lost Information': {
-      problem: "Can't find documents quickly",
-      solution: 'Elevora builds intelligent search systems',
-      impact: 'Instant access to critical information',
+    'The Information Hunt': {
+      problem: 'Outdated websites and scattered data costing hours daily',
+      solution: 'We fix your information architecture so everything is findable',
+      impact: 'Stop losing 10+ hours weekly searching for information',
       icon: 'Search',
     },
-    'Slow Decisions': {
-      problem: 'Days to compile reports',
-      solution: 'Elevora delivers real-time dashboards',
-      impact: 'Make informed decisions instantly',
+    'The Manual Maze': {
+      problem: 'Clumsy processes that should be automated but aren\'t',
+      solution: 'We identify and automate the right things, not everything',
+      impact: 'Skip 5-10 manual steps in your daily workflows',
+      icon: 'Workflow',
+    },
+    'The Scaling Wall': {
+      problem: 'Can\'t grow without proportionally growing headcount',
+      solution: 'Build systems that scale without adding people',
+      impact: 'Handle 10x volume with the same team',
       icon: 'TrendingUp',
+    },
+    'The Competitor Gap': {
+      problem: 'Others moving faster because their systems work better',
+      solution: 'Leapfrog competition with modern processes and smart AI use',
+      impact: 'Move from industry laggard to leader',
+      icon: 'Zap',
     },
   },
   
   // The Elevora Promise
   promise: [
-    "Give Elevora your toughest process, and we'll make it simple",
-    "Elevora doesn't just build systems — we build clarity",
-    "Once we understand your problem, the solution almost builds itself",
-    "Prototypes speak louder than proposals",
+    "We won't push AI if a spreadsheet redesign solves your problem",
+    "We won't build custom software if Zapier does the job",
+    "We won't over-engineer when simple works",
+    "We WILL fix what's actually broken and costing you time",
+  ],
+  
+  // Signs You Need Elevora
+  signsYouNeedUs: [
+    "Your team spends hours on reports that should take minutes",
+    "Information lives in 10 different places and no one knows which is current",
+    "You're doing manually what competitors automated years ago",
+    "Your website is so outdated, your own team can't find information",
+    "Growth means proportionally more admin work",
+    "You know AI could help but don't know where to start",
   ],
   
   // Founder
   founder: {
     name: 'Mathew Mozer',
     title: 'Founder & Lead Consultant',
-    bio: "With years of experience transforming how businesses operate, Mathew founded Elevora to help companies escape manual, error-prone processes and build intelligent, automated systems that scale.",
-    quote: "I've seen too many talented business owners drowning in manual processes when technology could set them free. After implementing systems that saved hundreds of hours at Fortune 500 companies, I realized smaller businesses need these capabilities even more. That's why I created Elevora - to bring enterprise-level transformation to growing businesses.",
+    bio: "With years of experience transforming how businesses operate, Mathew founded Elevora to help companies fix what's actually broken—whether that's processes, systems, or information chaos.",
+    quote: "I've seen too many consultants push complex solutions for simple problems. Companies don't need more technology—they need the RIGHT technology applied to the RIGHT problems. That's why I created Elevora: to be the consultant who actually diagnoses first, then prescribes the simplest effective solution.",
   },
 }

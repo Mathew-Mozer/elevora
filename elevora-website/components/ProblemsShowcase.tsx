@@ -2,20 +2,20 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Heart, Trophy, Users, Search, TrendingUp } from 'lucide-react'
+import { Clock, Search, Workflow, TrendingUp, Zap } from 'lucide-react'
 import { siteConfig } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
 const icons = {
-  'Heart': Heart,
-  'Trophy': Trophy,
-  'Users': Users,
+  'Clock': Clock,
   'Search': Search,
+  'Workflow': Workflow,
   'TrendingUp': TrendingUp,
+  'Zap': Zap,
 }
 
 export default function ProblemsShowcase() {
-  const [selectedProblem, setSelectedProblem] = useState<string>('Healthcare Overwhelm')
+  const [selectedProblem, setSelectedProblem] = useState<string>('The 3-Hour Report')
 
   return (
     <section className="py-20 bg-primary-bg">
@@ -28,11 +28,11 @@ export default function ProblemsShowcase() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-text mb-4">
-            Problems Elevora Solves
+            Transformations We Deliver
           </h2>
           <p className="text-lg text-primary-text/80 max-w-2xl mx-auto">
-            Give Elevora your toughest process, and we&apos;ll make it simple. 
-            Here&apos;s how we transform common business challenges.
+            Let Elevora diagnose what&apos;s really slowing you down. 
+            We fix what&apos;s broken with the right solution—not the fanciest one.
           </p>
         </motion.div>
 
@@ -126,12 +126,40 @@ export default function ProblemsShowcase() {
           </div>
         </motion.div>
 
-        {/* Why Businesses Choose Elevora */}
+        {/* Signs You Need Elevora */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-16"
+        >
+          <h3 className="text-2xl font-display font-bold text-center text-primary-text mb-8">
+            Signs You Need Elevora
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {siteConfig.signsYouNeedUs.map((sign, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 + index * 0.1 }}
+                className="flex items-start space-x-3"
+              >
+                <div className="w-2 h-2 bg-primary-accent rounded-full mt-2 flex-shrink-0" />
+                <p className="text-primary-text/80">{sign}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Why Businesses Choose Elevora */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 text-center"
         >
           <h3 className="text-2xl font-display font-bold text-primary-text mb-8">
@@ -139,17 +167,17 @@ export default function ProblemsShowcase() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              'Overwhelmed by manual systems needing untangling',
-              'Tired of jargon, want business outcomes',
-              'Need a partner who sees the big picture',
-              'Want both quick wins and transformation',
+              'Tired of consultants with only one solution',
+              'Need someone who understands operations',
+              'Want to fix root causes, not symptoms',
+              'Looking for practical solutions that work',
             ].map((reason, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5 + index * 0.1 }}
+                transition={{ delay: 0.7 + index * 0.1 }}
                 className="card hover-lift"
               >
                 <p className="text-sm text-primary-text/80">{reason}</p>

@@ -24,11 +24,11 @@ export default function ServicesDetail() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-text mb-6">
-            How Elevora Transforms Your Business
+            Solutions That Actually Work
           </h1>
           <p className="text-xl text-primary-text/80 max-w-3xl mx-auto">
-            From automation to AI, Elevora provides end-to-end solutions that eliminate manual work and unlock growth. 
-            Every solution is tailored to your specific needs and designed to deliver measurable ROI.
+            We diagnose what&apos;s actually broken—whether it&apos;s your processes, your information systems, or missing automation—then implement the right fix. 
+            Not the fanciest fix. Not the most expensive fix. The RIGHT fix.
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export default function ServicesDetail() {
                   </div>
 
                   <div className="p-6 bg-gradient-to-r from-primary-accent/10 to-primary-accent-light/10 rounded-xl border border-primary-accent/20">
-                    <h4 className="font-semibold gradient-text mb-2">Real Result:</h4>
+                    <h4 className="font-semibold gradient-text mb-2">Real Impact:</h4>
                     <p className="text-primary-text/80">{service.result}</p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function ServicesDetail() {
           })}
         </div>
 
-        {/* Why Choose Elevora */}
+        {/* The Elevora Difference */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,20 +100,20 @@ export default function ServicesDetail() {
           transition={{ duration: 0.5 }}
           className="mt-20 card p-12"
         >
-          <h2 className="text-3xl font-bold mb-8 text-center text-primary-text">Why Choose Elevora?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-primary-text">The Elevora Difference</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'End-to-End Solutions',
-                description: 'From initial analysis to ongoing support, I handle every aspect of your digital transformation.',
+                title: 'Solution Agnostic',
+                description: 'We won\'t push AI if a spreadsheet redesign solves your problem. We recommend what actually works.',
               },
               {
-                title: 'Proven ROI',
-                description: 'Every solution is designed to deliver measurable results and pay for itself through efficiency gains.',
+                title: 'Diagnose First',
+                description: 'We find what\'s actually costing you time and money before prescribing any solution.',
               },
               {
-                title: 'Industry Expertise',
-                description: 'Experience across healthcare, SaaS, and sports industries means I understand complex business needs.',
+                title: 'Fast ROI',
+                description: 'Quick wins first, then systematic transformation. See results in weeks, not months.',
               },
             ].map((item, index) => (
               <motion.div
@@ -140,7 +140,7 @@ export default function ServicesDetail() {
           className="text-center mt-16"
         >
           <h3 className="text-2xl font-bold text-primary-text mb-4">
-            Ready to eliminate manual work and scale your business?
+            Ready to fix what&apos;s actually broken?
           </h3>
           <p className="text-lg text-primary-text/70 mb-8">
             Get a free consultation and custom roadmap for your transformation.
